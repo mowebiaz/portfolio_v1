@@ -1,0 +1,35 @@
+@use './styles/sass/variables' as *;
+@use "sass:color";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 auto; /* for sticky footer */
+}
+
+.buttonone {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  margin: 1rem;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: color.scale($primary-color, $saturation: -20%);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.buttontwo {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  margin: 1rem;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: $secondary-color;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}

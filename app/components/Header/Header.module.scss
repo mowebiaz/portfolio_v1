@@ -1,0 +1,8 @@
+@use '../../styles/sass/variables' as *;
+
+.header {
+  width: 100vw;
+  background-color: $font-color;
+  padding: 0.5rem;
+  color: $background-color;
+}

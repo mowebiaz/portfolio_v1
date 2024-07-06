@@ -1,0 +1,67 @@
+@use './variables' as *;
+
+// -----------------------------------------------------------------------------
+// Basic styles
+// -----------------------------------------------------------------------------
+
+
+/*** Basic styles for containers ***/
+
+/* :root {
+  min-height: 100vh; /*à revoir:for footer position 
+} */
+
+html,
+body {
+  max-width: 100vw;
+  height: 100vh;
+  overflow-x: hidden; /* à revoir */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $font-color;
+  background: $background-color;
+  /* font-style*/
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+/*** Basic styles for links ***/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+// -----------------------------------------------------------------------------
+// Normalize
+// -----------------------------------------------------------------------------
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+input, button, textarea, select {
+  font: inherit; /*font-size, font-weight, and font-family*/
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+
+
+
+
