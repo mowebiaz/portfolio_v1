@@ -1,0 +1,65 @@
+@use '../../../styles/sass/variables' as *;
+
+.nav_list {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    text-transform: uppercase;
+    gap: 1.5rem;
+    letter-spacing: 2px;
+    background-color: $font-color;
+    padding: min(30vh, 10rem) 2rem; /* à revoir */
+    z-index: 99;
+    /*     z-index:1000;*/
+    /*transform: translateX(100%);
+    transition: transform 1s ease-out; */
+
+    &.open {
+        display: flex;
+        /*transform: translateX(0%);*/
+    }
+}
+
+.mobile-nav-toggle {
+    background-color: red;
+z-index: 100;
+}
+
+
+/*.mobile-nav-toggle {
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  width: 2rem;
+  aspect-ratio: 1;
+  top: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  border: 1px solid red;
+     background: transparent;
+  background-image: url("menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer; 
+}*/
+
+/* button.mobile-nav-toggle {
+} */
+
+.active {
+    color: $secondary-color;
+}
+
+@media screen and (min-width: 768px) {
+    /*revoir */
+    .nav_list {
+        display: flex;
+        flex-direction: row;
+        padding-block: 1rem; /*top and bottom */
+        padding-inline: clamp(3rem, 5vw, 10rem); /*left and right*/
+    }
+    .home {
+        display: none;
+    }
+
+}

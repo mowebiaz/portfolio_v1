@@ -1,0 +1,17 @@
+@use '../../../styles/sass/variables' as *;
+
+.logo svg {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .logo svg {
+      display: block;
+        width: 50px;
+        height: 50px;
+        fill: $background-color;
+        &:hover {
+            fill: $secondary-color;
+        }
+    }
+}

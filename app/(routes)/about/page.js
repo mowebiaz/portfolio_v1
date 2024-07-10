@@ -1,9 +1,9 @@
 import styles from './page.module.scss'
 
-export default function Portfolio() {
+export default function About() {
   return (
     <main className={styles.main}>
-      <h1>Portfolio</h1>
+      <h1>Apropos</h1>
     </main>
   )
 }

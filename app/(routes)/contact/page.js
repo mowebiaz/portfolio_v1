@@ -1,4 +1,8 @@
-
+import styles from './page.module.scss'
 export default function Contact() {
-  return <h1>Contact</h1>;
+  return (
+    <main className={styles.main}>
+      <h1>Contact</h1>
+    </main>
+  )
 }
