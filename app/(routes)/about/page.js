@@ -1,8 +1,8 @@
-import styles from './page.module.scss'
+import './page.scss'
 
 export default function About() {
   return (
-    <main className={styles.main}>
+    <main>
       <h1>Apropos</h1>
     </main>
   )

@@ -22,9 +22,8 @@
 
 .mobile-nav-toggle {
     background-color: red;
-z-index: 100;
+    z-index: 100;
 }
-
 
 /*.mobile-nav-toggle {
   display: block;
@@ -46,7 +45,7 @@ z-index: 100;
 /* button.mobile-nav-toggle {
 } */
 
-.active {
+.activeLink {
     color: $secondary-color;
 }
 
@@ -58,8 +57,7 @@ z-index: 100;
         padding-block: 1rem; /*top and bottom */
         padding-inline: clamp(3rem, 5vw, 10rem); /*left and right*/
     }
-    .home {
+    .homeLink {
         display: none;
     }
-
 }

@@ -1,10 +1,12 @@
-import { Logo } from "./Logo/Logo";
-import { Navigation } from "./Navigation/Navigation";
-import styles from "./Header.module.scss";
+import { Logo } from './Logo/Logo'
+import { Navigation } from './Navigation/Navigation'
+import './Header.scss'
 
 export function Header() {
-  return <header className={styles.header}>
-<Logo />
- <Navigation />
-  </header>;
+  return (
+    <header>
+      <Logo />
+      <Navigation />
+    </header>
+  )
 }

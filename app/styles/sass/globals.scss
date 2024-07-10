@@ -4,9 +4,6 @@
 // Basic styles
 // -----------------------------------------------------------------------------
 
-
-/*** Basic styles for containers ***/
-
 /* :root {
   min-height: 100vh; /*à revoir:for footer position 
 } */
@@ -29,15 +26,28 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+main {
+  margin-top: 100px;
+  width: 90%; /*à modifier */
+}
 
-
-
-/*** Basic styles for links ***/
 a {
   color: inherit;
   text-decoration: none;
 }
 
+.sr-only { /* à revoir */
+  /*   position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0; */
+    display: none;
+  }
 
 // -----------------------------------------------------------------------------
 // Normalize
@@ -56,27 +66,16 @@ input, button, textarea, select {
   font: inherit; /*font-size, font-weight, and font-family*/
 }
 
-/* button {
+ button {
   background-color: transparent;
-} */
-
+  color: inherit;
+} 
 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-.sr-only { /* à revoir */
-/*   position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0; */
-  display: none;
-}
+
 
 
 

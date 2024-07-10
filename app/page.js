@@ -1,14 +1,14 @@
 //import Image from "next/image";
-import styles from './page.module.scss'
+import "./page.scss"
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main id='home'>
       <h1>Hello World</h1>
       <h2>My name is Morgane</h2>
       <p>This is my portfolio</p>
-      <button className={styles.buttonone}>Button One</button>
-      <button className={styles.buttontwo}>Button Two</button>
+      <button className="buttonone">Button One</button>
+      <button className="buttontwo">Button Two</button>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu
         ullamcorper leo. Sed ac leo ut libero mattis blandit pellentesque ac

@@ -1,16 +1,16 @@
 
 import clsx from 'clsx'
-import styles from './BurgerIcon.module.scss'
+import "./BurgerIcon.scss"
 
 export function BurgerIcon({ isOpen }) {
   return (
     <svg
-      className={clsx(styles.burger, { [styles.open]: isOpen })}
+      className={clsx("burger", { "open": isOpen })}
       width="250"
       viewBox="0 0 100 100"
     >
       <rect
-        className={styles.rectBottom}
+        className="rectBottom"
         width="80"
         height="10"
         x="10"
@@ -18,7 +18,7 @@ export function BurgerIcon({ isOpen }) {
         rx="5"
       />
       <rect
-        className={styles.rectMiddle}
+        className="rectMiddle"
         width="80"
         height="10"
         x="10"
@@ -26,7 +26,7 @@ export function BurgerIcon({ isOpen }) {
         rx="5"
       />
       <rect
-        className={styles.rectTop}
+        className="rectTop"
         width="80"
         height="10"
         x="10"

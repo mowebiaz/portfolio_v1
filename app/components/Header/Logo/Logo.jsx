@@ -1,10 +1,10 @@
 import Link from 'next/link'
-import styles from './Logo.module.scss'
+import "./Logo.scss"
 
 export function Logo() {
   return (
     <Link
-      className={styles.logo}
+      className="logo"
       href="/"
     >
       <svg viewBox="0 0 75 75">
