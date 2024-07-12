@@ -1,10 +1,10 @@
-//import Image from "next/image";
+import { rancho } from "./styles/fonts"
 import "./page.scss"
 
 export default function Home() {
   return (
     <main id='home'>
-      <h1>Hello World</h1>
+      <h1 className={rancho.className}>Hello World</h1>
       <h2>My name is Morgane</h2>
       <p>This is my portfolio</p>
       <button className="buttonone">Button One</button>

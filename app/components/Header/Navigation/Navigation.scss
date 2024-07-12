@@ -1,4 +1,5 @@
-@use '../../../styles/sass/variables' as *;
+//@use '../../../styles/sass/variables' as *;
+@use '/app/styles/sass/variables' as *;
 
 .nav_list {
     display: none;
@@ -23,27 +24,9 @@
 .mobile-nav-toggle {
     background-color: red;
     z-index: 100;
+    cursor: pointer;
+
 }
-
-/*.mobile-nav-toggle {
-  display: block;
-  position: absolute;
-  background-color: transparent;
-  width: 2rem;
-  aspect-ratio: 1;
-  top: 2rem;
-  right: 2rem;
-  z-index: 9999;
-  border: 1px solid red;
-     background: transparent;
-  background-image: url("menu.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer; 
-}*/
-
-/* button.mobile-nav-toggle {
-} */
 
 .activeLink {
     color: $secondary-color;

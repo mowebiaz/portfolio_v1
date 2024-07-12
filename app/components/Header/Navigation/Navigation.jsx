@@ -1,11 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import clsx from 'clsx'
 import Link from 'next/link'
 import { ActiveLink } from './ActiveLink'
 import { BurgerIcon } from '../BurgerIcon/BurgerIcon'
-import "./Navigation.scss"
+import './Navigation.scss'
 
 const navLinks = [
   { title: '/portfolio', label: 'Portfolio' },
@@ -39,8 +38,13 @@ export function Navigation() {
       </button>
        */}
       <nav>
-        <ul className={clsx("nav_list", { "open": isOpen })}>
-          <Link className="homeLink" href="/">logo + Home</Link>
+        <ul className={`nav_list ${isOpen ? 'open' : ''}`}>
+          <Link
+            className="homeLink"
+            href="/"
+          >
+            logo + Home
+          </Link>
           {navLinks.map(({ title, label }) => (
             <li key={title}>
               <ActiveLink

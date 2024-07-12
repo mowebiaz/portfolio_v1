@@ -1,7 +1,6 @@
-@use '../../../../styles/sass/variables' as *;
+@use '/app/styles/sass/variables' as *;
 
 .card {
-    /*height: 20rem;*/
     &_top {
         position: relative;
         width: inherit;
@@ -54,6 +53,25 @@
             color: $background-color;
         }
     }
+    &_content {
+        padding: 0.5rem 1rem;
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: column;
+        &_tech {
+            list-style-type: none;
+            display: flex;
+            gap: 0.5rem;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                background-color: $secondary-color;
+                padding: 0.25rem 0.5rem;
+            }
+        }
+    }
 }
 
 #dialogProject {
@@ -61,9 +79,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: red;
-    color: blue;
+    transform: translate(50%, 50%);
     border-radius: 1.25rem;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    background-color: gray;
+    .closeButton {
+        background-color: red;
+        width: 50px;
+        height: 50px;
+    }
 }

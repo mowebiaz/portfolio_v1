@@ -3,15 +3,7 @@
 import Image from 'next/image'
 import './Card.scss'
 
-export function Card({ project }) {
-  const openDialog = () => {
-    document.getElementById('dialogProject').showModal()
-  }
-
-  const closeDialog = () => {
-    document.getElementById('dialogProject').close()
-  }
-
+export function Card({ project, setSelectedProject }) {
   return (
     <>
       <div className="card">
@@ -23,7 +15,7 @@ export function Card({ project }) {
           />
           <div className="card_icon">
             <div className="card_icon_content">
-              <button onClick={openDialog}>xxx</button>
+              <button onClick={() => setSelectedProject(project)}>xxx</button>
             </div>
           </div>
         </div>
@@ -36,20 +28,6 @@ export function Card({ project }) {
           </ul>
         </div>
       </div>
-      <dialog id="dialogProject">
-        <button
-          className="dialog_closeButton"
-          onClick={closeDialog}
-        >
-          x
-        </button>
-        <div className="dialog_title">
-          <h3>{project.name}</h3>
-          <div>links</div>
-        </div>
-        <p>{project.context}</p>
-        <ul className="dialog_works"></ul>
-      </dialog>
     </>
   )
 }
