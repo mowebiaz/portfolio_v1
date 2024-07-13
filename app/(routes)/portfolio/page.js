@@ -47,7 +47,7 @@ export default function Portfolio() {
       </div>
       <ModalProject
         ref={dialogRef}
-        modalContent={selectedProject}
+        content={selectedProject}
         onCloseModal={closeModal}
       />
     </main>

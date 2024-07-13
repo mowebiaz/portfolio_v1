@@ -1,12 +1,13 @@
 'use client'
 
 import Image from 'next/image'
+import { FaPlus } from 'react-icons/fa6'
 import './Card.scss'
 
 export function Card({ project, setSelectedProject }) {
   return (
     <>
-      <div className="card">
+      <article className="card">
         <div className="card_top">
           <Image
             src={project.image}
@@ -15,7 +16,9 @@ export function Card({ project, setSelectedProject }) {
           />
           <div className="card_icon">
             <div className="card_icon_content">
-              <button onClick={() => setSelectedProject(project)}>xxx</button>
+              <button onClick={() => setSelectedProject(project)}>
+                <FaPlus />
+              </button>
             </div>
           </div>
         </div>
@@ -27,7 +30,7 @@ export function Card({ project, setSelectedProject }) {
             ))}
           </ul>
         </div>
-      </div>
+      </article>
     </>
   )
 }

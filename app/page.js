@@ -1,11 +1,15 @@
-import { rancho } from "./styles/fonts"
-import "./page.scss"
+import { rancho } from './styles/fonts'
+import { FaBeer } from 'react-icons/fa'
+import './page.scss'
 
 export default function Home() {
   return (
-    <main id='home'>
+    <main id="home">
       <h1 className={rancho.className}>Hello World</h1>
       <h2>My name is Morgane</h2>
+      <h3>
+        Lets go for a <FaBeer />?
+      </h3>
       <p>This is my portfolio</p>
       <button className="buttonone">Button One</button>
       <button className="buttontwo">Button Two</button>

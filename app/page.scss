@@ -10,20 +10,24 @@ h1 {
   flex-direction: column;
   align-items: center;
   flex: 1 0 auto; /* for sticky footer */
-  margin-top: 100px;
 }
 
 .buttonone {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 5px solid transparent;
   padding: 0.6em 1.2em;
   margin: 1rem;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: color.scale($primary-color, $saturation: -20%);
+  background-color: $primary-color;
+  color: $background-color;
   cursor: pointer;
   transition: border-color 0.25s;
+}
+
+.buttonone:hover {
+  border-color: color.scale($primary-color, $lightness: -50%);
 }
 
 .buttontwo {
@@ -37,4 +41,14 @@ h1 {
   background-color: $secondary-color;
   cursor: pointer;
   transition: border-color 0.25s;
+}
+
+h3 svg {
+  fill: $font-color;
+  vertical-align: middle;
+  height: 100px;
+  width: 100px;
+  stroke: red;
+  stroke-width: 5;
+
 }

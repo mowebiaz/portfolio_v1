@@ -3,29 +3,30 @@
 
 .nav_list {
     display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     text-transform: uppercase;
     gap: 1.5rem;
     letter-spacing: 2px;
     background-color: $font-color;
-    padding: min(30vh, 10rem) 2rem; /* à revoir */
-    z-index: 99;
-    /*     z-index:1000;*/
-    /*transform: translateX(100%);
-    transition: transform 1s ease-out; */
+    padding: 8rem 2rem;
+    /*padding: min(30vh, 10rem) 2rem; /* à revoir */
+    z-index: 100;
 
     &.open {
         display: flex;
-        /*transform: translateX(0%);*/
     }
 }
 
 .mobile-nav-toggle {
     background-color: red;
-    z-index: 100;
+    z-index: 101;
     cursor: pointer;
-
 }
 
 .activeLink {
@@ -35,6 +36,7 @@
 @media screen and (min-width: 768px) {
     /*revoir */
     .nav_list {
+        position: relative;
         display: flex;
         flex-direction: row;
         padding-block: 1rem; /*top and bottom */

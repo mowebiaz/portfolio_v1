@@ -27,7 +27,7 @@ body {
 }
 
 main {
-  margin-top: 1rem;
+  margin-top: 3rem;
   width: 90%; /*à modifier */
   max-width: $max-width;
 }
@@ -35,6 +35,10 @@ main {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .sr-only { /* à revoir */
