@@ -1,0 +1,6 @@
+@mixin main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto; /* for sticky footer */
+}

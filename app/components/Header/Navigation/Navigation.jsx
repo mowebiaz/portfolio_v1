@@ -1,9 +1,10 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Link from 'next/link'
 import { ActiveLink } from './ActiveLink'
 import { BurgerIcon } from '../BurgerIcon/BurgerIcon'
+import { MdHome } from "react-icons/md";
 import './Navigation.scss'
 
 const navLinks = [
@@ -14,6 +15,7 @@ const navLinks = [
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
+  const mobileNav = useRef(null)
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
@@ -43,7 +45,7 @@ export function Navigation() {
             className="homeLink"
             href="/"
           >
-            logo + Home
+            <MdHome /> Home
           </Link>
           {navLinks.map(({ title, label }) => (
             <li key={title}>

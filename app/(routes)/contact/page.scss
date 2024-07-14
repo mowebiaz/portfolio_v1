@@ -1,0 +1,6 @@
+@use '/app/styles/sass/mixins' as *;
+
+#contact {
+  @include main;
+}
+
