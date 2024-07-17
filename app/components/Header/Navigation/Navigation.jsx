@@ -4,7 +4,7 @@ import { useState, useRef } from 'react'
 import Link from 'next/link'
 import { ActiveLink } from './ActiveLink'
 import { BurgerIcon } from '../BurgerIcon/BurgerIcon'
-import { MdHome } from "react-icons/md";
+import { MdHome } from 'react-icons/md'
 import './Navigation.scss'
 
 const navLinks = [
@@ -26,19 +26,13 @@ export function Navigation() {
       <button
         className="mobile-nav-toggle"
         onClick={toggleMenu}
+        /*                 aria-controls="primary-navigation"
+        aria-expanded="false" */
       >
         <span className="sr-only">Menu</span>
         <BurgerIcon isOpen={isOpen} />
       </button>
 
-      {/*       <button
-        class="mobile-nav-toggle"
-        aria-controls="primary-navigation"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Menu</span>
-      </button>
-       */}
       <nav>
         <ul className={`nav_list ${isOpen ? 'open' : ''}`}>
           <Link

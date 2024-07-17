@@ -10,8 +10,6 @@ const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID
 const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY
 
 export function FormContact() {
-  /* const { register, handleSubmit, formState, errors, setError } = useForm()
-  const {isSubmitting, isSubmitted, isSubmitSuccessful,  } = formState*/
   const [error, setError] = useState(null)
   const [success, setSuccess] = useState(false)
   const dialogRef = useRef(null)
@@ -33,12 +31,6 @@ export function FormContact() {
     setSuccess(false)
 
     try {
-      /*       const result = await emailjs.send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
-        data,
-        'YOUR_PUBLIC_KEY'
-      ) */
       const result = await emailjs.send(
         serviceID,
         templateID,
@@ -50,11 +42,10 @@ export function FormContact() {
         publicKey
       )
 
-      console.log(result)
       setSuccess(true)
       dialogRef.current?.showModal()
     } catch (error) {
-      setError(error.text)
+      setError(true)
       dialogRef.current?.showModal()
     }
   }
@@ -109,7 +100,7 @@ export function FormContact() {
         ref={dialogRef}
         className="formContact_dialog"
       >
-        {error && <p className="errorMsg">Erreur: {error}</p>}
+        {error && <p className="errorMsg">Problème envoi</p>}
         {success && <p className="successMsg">Message envoyé avec succès!</p>}
         <button onClick={closeDialog}>Fermer</button>
       </dialog>

@@ -1,3 +1,5 @@
+@use '/app/styles/sass/variables' as *;
+
 .one svg {
   width: 100px;
   height: 100px;
@@ -13,4 +15,13 @@
   fill: #61DAFB;
   width: 100px;
   height: 100px;
+}
+
+h3 svg {
+  fill: $font-color;
+  vertical-align: middle;
+  height: 100px;
+  width: 100px;
+  stroke: red;
+  stroke-width: 5;
 }
