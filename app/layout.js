@@ -3,6 +3,11 @@ import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 import "./styles/sass/globals.scss";
 
+export const metadata = {
+  title: 'Home',
+  description: 'blablabla',
+}
+
 
 export default function RootLayout({ children }) {
   return (

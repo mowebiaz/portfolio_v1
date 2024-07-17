@@ -4,7 +4,7 @@ export const projectsList = [
     image: "/images/bank-tree.webp",
     github:"https://github.com/mowebiaz/ArgentBank",
     context: "Argent Bank est une application web de gestion de compte bancaire",
-    works: ["optimisation", "debug"],
+    works: ["optimisation", "debug", "jjjjjjjjj  jjjjjjjjjjjjjj  jjjjjjjjjjjjjjj  jjjjjjjjjjjjjjjjjjjjjjjjj   jjjjjjjjjjjjjjjjjjjjjjjj  jjjjjjjj   jjjjjjjjjjjjjjj   jjjjjjjjjjjjjj   jjjjjjjjjjjjjjjjj"],
     technologies: ["React", "Redux", "Tailwind CSS"]
   },
   { id: 1,

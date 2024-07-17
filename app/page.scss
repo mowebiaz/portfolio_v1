@@ -11,16 +11,10 @@ h1 {
 }
 
 .buttonone {
-    border-radius: 8px;
-    padding: 0.6em 1.2em;
-    margin: 1rem;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
+    @include button;
     background-color: $primary-color;
     color: $background-color;
-    cursor: pointer;
-    transition: border-color 0.25s;
+    transition: all 250ms;
 }
 
 .buttonone:hover {
@@ -40,5 +34,3 @@ h1 {
     cursor: pointer;
     transition: border-color 0.25s;
 }
-
-
