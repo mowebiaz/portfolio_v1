@@ -1,6 +1,6 @@
 export const ReactIcon = () => (
 <svg width="569px" height="512px" viewBox="0 0 569 512" >
-    <title>React-Logo-Filled (1)</title>
+    <title>React-Logo-Filled</title>
     <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g id="Artboard-Copy-7" transform="translate(-227, -256)" fill="#58C4DC" fillRule="nonzero">
             <g id="React-Logo-Filled-(1)" transform="translate(227, 256)">

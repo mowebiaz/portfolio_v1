@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser'
+import { Loader } from '/public/icons/Loader'
 import './FormContact.scss'
 
 const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID
@@ -14,17 +15,19 @@ export function FormContact() {
   const [success, setSuccess] = useState(false)
   const dialogRef = useRef(null)
 
-  const closeDialog = () => {
-    reset()
-    dialogRef.current?.close()
-  }
-
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
     reset,
-  } = useForm()
+    clearErrors,
+  } = useForm({ mode: 'onBlur' })
+
+  const closeDialog = () => {
+    dialogRef.current?.close()
+    reset()
+    clearErrors() // Efface les erreurs après la réinitialisation
+  }
 
   const onSubmit = async (data) => {
     setError(null)
@@ -60,6 +63,7 @@ export function FormContact() {
         <input
           type="text"
           name="name"
+          id="name"
           {...register('name', { required: 'Vous devez indiquer votre nom' })}
           autoComplete="name"
         />
@@ -70,6 +74,7 @@ export function FormContact() {
         <input
           type="email"
           name="email"
+          id="email"
           {...register('email', {
             required: 'Vous devez indiquer une adresse email',
             pattern: {
@@ -85,6 +90,7 @@ export function FormContact() {
         <label htmlFor="text">Message:</label>
         <textarea
           name="text"
+          id="text"
           {...register('text', { required: 'Vous devez indiquer un message' })}
         />
         {errors.text && <p className="alert">{errors.text.message}</p>}
@@ -93,15 +99,17 @@ export function FormContact() {
         type="submit"
         disabled={isSubmitting}
       >
-        {isSubmitting ? 'Loader' : 'Envoyer'}
+        {isSubmitting ? <Loader /> : 'Envoyer'}
       </button>
 
       <dialog
         ref={dialogRef}
-        className="formContact_dialog"
+        className={
+          success ? 'formContact_dialog success' : 'formContact_dialog error'
+        }
       >
-        {error && <p className="errorMsg">Problème envoi</p>}
-        {success && <p className="successMsg">Message envoyé avec succès!</p>}
+        {error && <p>Problème d&apos;envoi</p>}
+        {success && <p>Message envoyé avec succès!</p>}
         <button onClick={closeDialog}>Fermer</button>
       </dialog>
     </form>

@@ -1,27 +1,60 @@
 @use '/app/styles/sass/variables' as *;
+@use '/app/styles/sass/mixins' as *;
 
-.one svg {
-  width: 100px;
-  height: 100px;
+#about {
+    @include main;
+    border: 1px solid violet;
+    padding: 1rem 2rem;
+    h1 {
+        font-size: 2rem;
+        font-weight: lighter;
+    }
 }
 
-.react  {
-  width: 100px;
-  height: 100px;
-  fill: #58C4DC;
+.about_container {
+    border: 1px solid red;
+    img {
+        width: 5rem;
+        height: 5rem;
+        object-fit: cover;
+        border-radius: 50%;
+        float: left;
+        shape-outside: margin-box;
+        margin-right: 1rem;
+    }
+    p {
+        border: 1px solid green;
+        text-align: justify;
+    }
+    /*     &::after {
+        content: '';
+        display: block;
+        clear: both;
+    } */
+}
+
+.one svg {
+    width: 100px;
+    height: 100px;
+}
+
+.react {
+    width: 100px;
+    height: 100px;
+    fill: #58c4dc;
 }
 
 .simple {
-  fill: #61DAFB;
-  width: 100px;
-  height: 100px;
+    fill: #61dafb;
+    width: 100px;
+    height: 100px;
 }
 
 h3 svg {
-  fill: $font-color;
-  vertical-align: middle;
-  height: 100px;
-  width: 100px;
-  stroke: red;
-  stroke-width: 5;
+    fill: $font-color;
+    vertical-align: middle;
+    height: 100px;
+    width: 100px;
+    stroke: red;
+    stroke-width: 5;
 }

@@ -9,7 +9,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
     color: $background-color;
     /*   background-color: hsl(0 0% 100% / 0.1);
   backdrop-filter: blur(1rem); */
@@ -20,6 +19,8 @@ header {
     /*revoir */
     header {
         position: sticky;
+        padding: 1rem;
+
         background-color: $font-color;
     }
 }

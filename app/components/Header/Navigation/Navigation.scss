@@ -18,10 +18,18 @@
     /*padding: min(30vh, 10rem) 2rem; /* à revoir */
     z-index: 100;
 
+    li {
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+
+
     &.open {
         display: flex;
         animation: slideIn 300ms forwards;
     }
+
 }
 
 @keyframes slideIn {
@@ -32,6 +40,20 @@
     to {
         transform: translateX(0%);
         opacity: 1;
+    }
+}
+
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0%);
+        opacity: 1;
+
+
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
     }
 }
 
@@ -58,4 +80,5 @@
 
 .activeLink {
     color: $secondary-color;
+
 }

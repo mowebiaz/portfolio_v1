@@ -1,11 +1,15 @@
 @use '/app/styles/sass/variables' as *;
 @use '/app/styles/sass/mixins' as *;
+@use 'sass:color';
 
 .formContact {
-    border: 1px solid red;
+    width: clamp(18rem, 50vw, 35rem);
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: clamp(0.5rem, 4vw, 5rem);
+    box-shadow: 0px 0px 20px hsla(223, 100%, 50%, 0.5);
+
     div {
         display: flex;
         flex-direction: column;
@@ -15,10 +19,40 @@
     textarea {
         background-color: $font-color;
         border-radius: 0.25rem;
+        padding: 5px;
+/*         &:invalid {
+
+        } */
     }
     textarea {
         height: 10rem;
         resize: vertical;
+    }
+
+    .alert {
+        padding: 0.3rem;
+        margin-top: 5px;
+        border: 1px solid hsla(0, 100, 52%, 1);
+        background-color: hsla(0, 100, 92,1);
+        color: hsla(0, 100, 5, 1);
+        border-radius: 0.25rem;
+        font-size: 1rem;
+    }
+    button[type='submit'] {
+        display: inline-flex;
+        align-self: center;
+        justify-content: center;
+        width: 10rem;
+        @include button;
+        background-color: $primary-color;
+        color: $background-color;
+        border: 1px solid transparent;
+        transition: all 250ms ease-in-out;
+        &:hover {
+            background-color: color.scale($primary-color, $lightness: 20%);
+            color: color.scale($background-color, $lightness: 10%);
+            border: 1px solid $font-color;
+        }
     }
 }
 
@@ -31,31 +65,38 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    border-width: 1px;
+    border-style: solid;
     &::backdrop {
-        /*         backdrop-filter: blur(4px);
- */
         @include backdropBlur;
     }
-    .successMsg {
-        background-color: $primary-color;
+
+    &.success {
+        background-color: color.scale($primary-color, $lightness: 44%);
+        border-color: color.scale($primary-color, $lightness: -30%);
         color: $background-color;
         padding: 1rem;
         border-radius: 0.5rem;
         text-align: center;
     }
-    .errorMsg {
-        background-color: $background-color;
-        color: $font-color;
+    &.error {
+        border: 1px solid hsla(0, 100, 52%, 1);
+        background-color: hsla(0, 100, 92,1);
+        color: hsla(0, 100, 5, 1);
         padding: 1rem;
         border-radius: 0.5rem;
         text-align: center;
     }
     button {
-        width: fit-content;
-        border: 1px solid red;
-        border-radius: 0.5rem;
-        padding: 0.5rem 1.5rem;
+        @include button;
         background-color: $background-color;
         color: $font-color;
+        border: 1px solid transparent;
+         transition: all 250ms ease-in-out;
+        &:hover {
+            background-color: color.scale($background-color, $lightness: 5%);
+            color: color.scale($font-color, $lightness: 10%);
+            border: 1px solid $font-color;
+        } 
     }
 }

@@ -8,6 +8,8 @@
   min-height: 100vh; /*à revoir:for footer position 
 } */
 
+
+
 html,
 body {
   max-width: 100vw;
@@ -21,13 +23,12 @@ body {
   align-items: center;
   color: $font-color;
   background: $background-color;
-  /* font-style*/
   line-height: 1.5;
+  font-size: 1.25rem;
   -webkit-font-smoothing: antialiased;
 }
 
 main {
-  margin-top: 3rem;
   width: 90%; /*à modifier */
   max-width: $max-width;
 }
@@ -79,6 +80,23 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
+
+// -----------------------------------------------------------------------------
+// not-found page
+// -----------------------------------------------------------------------------
+ #not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  flex: 1 0 auto; /* for sticky footer */
+  a {
+    text-decoration: underline;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+ }
 
 
 
