@@ -1,4 +1,4 @@
-import { rancho, cocon } from './styles/fonts'
+import { merienda } from './styles/fonts'
 import './page.scss'
 
 export default function Home() {
@@ -6,14 +6,14 @@ export default function Home() {
     <>
       <main id="home">
         <section className="hero">
-          <p>gjgjhgjhgjgjgjhg</p>
           <button className="buttonone">Button One</button>
           <button className="buttontwo">Button Two</button>
         </section>
         <section className="content">
-          <h1 className={rancho.className}>Hello World</h1>
-          <h1 className={cocon.className}>Hello World</h1>
-          <h2 className={cocon.className}>My name is Morgane</h2>
+          <h1 className={merienda.className}>Hello World</h1>
+          <h2 className={merienda.className}>My name is Morgane</h2>
+          <h3 className={merienda.className}>kjljkkjlkljkkj</h3>
+          <h3>jkhjkhkhkjhkjhjhjkhjhkh</h3>
 
           <p>This is my portfolio</p>
 

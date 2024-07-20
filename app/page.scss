@@ -2,27 +2,13 @@
 @use './styles/sass/mixins' as *;
 @use 'sass:color';
 
-h1 {
-    font-size: 2rem;
-    font-weight: lighter;
-}
-
-h2 {
-    font-size: 1.5rem;
-    font-weight: lighter;
-}
-
-
 #home {
     @include main;
-/*     .hero {
+    /*     .hero {
         width: 100vw;
         height: 100vh; 
     } */
-
 }
-
-
 
 .buttonone {
     @include button;

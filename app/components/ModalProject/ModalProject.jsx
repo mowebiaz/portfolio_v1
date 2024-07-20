@@ -1,5 +1,6 @@
 import { forwardRef } from 'react'
 import Image from 'next/image'
+import { merienda } from '../../styles/fonts'
 import { FaLink } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa6'
 import './ModalProject.scss'
@@ -24,18 +25,20 @@ export const ModalProject = forwardRef(function ModalProject(
                 height={400}
               />
             </div>
-            <h2>{content?.name}</h2>
+            <h2 className={merienda.className}>{content?.name}</h2>
             <div className="links">
-              <a
-                href={content.github}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Lien vers le dépôt GitHub"
-                title="dépôt GitHub"
-                role="link"
-              >
-                <FaGithub />
-              </a>
+              {content.github ? (
+                <a
+                  href={content.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Lien vers le dépôt GitHub"
+                  title="dépôt GitHub"
+                  role="link"
+                >
+                  <FaGithub />
+                </a>
+              ) : null}
               {content.href ? (
                 <a
                   href={content.href}

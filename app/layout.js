@@ -1,5 +1,4 @@
 import { roboto } from './styles/fonts';
-import { cocon } from './styles/fonts';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 import "./styles/sass/globals.scss";

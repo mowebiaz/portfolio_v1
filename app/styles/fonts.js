@@ -1,10 +1,7 @@
-import { Roboto, Inter, Pacifico, Rancho } from 'next/font/google'
-import localFont from 'next/font/local'
+import { Roboto, Merienda, Inter, Pacifico, Rancho } from 'next/font/google'
 
 export const roboto = Roboto({ weight: ['400','500'], subsets: ['latin'] })
-
-export const cocon = localFont({ src: '../../public/fonts/cocon-regular-font-webfont.woff2'})
-
+export const merienda = Merienda({ weight: ['400', '500', '600', '700'], subsets: ['latin'] })
 
 export const inter = Inter({ subsets: ['latin'] })
 export const pacifico = Pacifico({ weight: '400', subsets: ['latin'] })

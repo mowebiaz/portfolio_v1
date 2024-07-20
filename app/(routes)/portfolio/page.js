@@ -1,4 +1,5 @@
 import { CardsContainer } from '../../components/CardsContainer/CardsContainer'
+import { merienda } from '../../styles/fonts'
 import './page.scss'
 
 export const metadata = {
@@ -8,7 +9,7 @@ export const metadata = {
 export default function Portfolio() {
   return (
     <main id="portfolio">
-      <h1>Portfolio</h1>
+      <h1 className={merienda.className}>Mes projets</h1>
       <CardsContainer />
     </main>
   )

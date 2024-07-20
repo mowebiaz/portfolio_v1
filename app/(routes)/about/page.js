@@ -1,4 +1,4 @@
-import { cocon } from '../../styles/fonts';
+import { merienda } from '../../styles/fonts'
 import { ReactIcon } from '/public/icons/ReactIcon'
 import { FaReact } from 'react-icons/fa6'
 import { FaBeer } from 'react-icons/fa'
@@ -10,62 +10,77 @@ export const metadata = {
 
 export default function About() {
   return (
-    <main id='about'>
-      <h1 className={cocon.className}>A propos</h1>
-      <article className='about_container'>
-        <img alt='zozor' src='/images/colors.jpg'></img>
+    <main id="about">
+      <h1 className={merienda.className}>A propos</h1>
+      <article className="about_container">
+        <div className=""></div>
         <p>
-
-        Ancienne scientifique, je me suis formée à HTML et CSS il y a un certain
-        nombre d’années. J&apos;ai pris plaisir à créer plusieurs sites web pour des
-        journées scientifiques ou des projets plus personnels, ce qui m&apos;a
-        motivée à approfondir mes compétences.
+          Ancienne scientifique, je me suis formée à HTML et CSS il y a un
+          certain nombre d’années. J&apos;ai pris plaisir à créer plusieurs
+          sites web pour des journées scientifiques ou des projets plus
+          personnels, ce qui m&apos;a motivée à approfondir mes compétences.
         </p>
       </article>
-      <p>
-        Ces dernières années, j&apos;ai mis à jour mes compétences avec les
-        technologies (plus vraiment) modernes comme Flexbox et Grid, en suivant
-        des cours en ligne, notamment sur freeCodeCamp où j&apos;ai obtenu la
-        certification &quot;Responsive Web Design&quot;. J&apos;ai commencé à appréhender le
-        SCSS, le référencement (SEO) et les animations.
-      </p>
-      <p>
-        Souhaitant évoluer vers le domaine de la programmation, j&apos;ai décidé de
-        me plonger dans Python. Le but: créer des outils basés sur
-        l&apos;intelligence artificielle, particulièrement pour l&apos;analyse d&apos;images de
-        microscopie. J&apos;ai appris à utiliser des librairies comme Pandas, NumPy,
-        OpenCV, et scikit-image, ainsi que des outils d&apos;IA comme scikit-learn et
-        Keras, tout en obtenant des certifications de DataCamp. Tout ça en
-        autodidacte: à l’époque Google était le meilleur des professeurs (et
-        chatGPT n’existait pas!)
-      </p>
-      <p>
-        MAIS..., j&apos;ai réalisé que ces outils, basés sur des statistiques, ne me
-        correspondaient pas totalement. L&apos;aspect visuel et l&apos;UX design me
-        manquaient. Après une réflexion approfondie, j&apos;ai décidé de me
-        reconvertir dans le développement web, en suivant une formation
-        d&apos;intégrateur/développeur web en parallèle de mon travail. design me
-        manquaient. Après mûre réflexion, j&apos;ai choisi de me reconvertir dans le
-        développement web en suivant une formation d&apos;intégrateur/développeur
-        web, tout en continuant à travailler.
-      </p>
-      MAIS: il me manquait l’aspect visuel et UX design/interactions
-      utilisateur. de … à… en passant par …, l’idée avait fait son chemin et
-      était tout simplement devenue une évidence… Je me suis reconvertie dans le
-      web, en suivant une formation d’intégrateur / développeur web en parallèle
-      de mon travail.
-      <p>
-        Aujourd&apos;hui, je me lance en freelance pour créer des sites web et des
-        outils interactifs. Mon portfolio présente mes projets, à la fois ceux
-        réalisés durant ma formation et mes initiatives personnelles. Mon but
-        est de proposer des solutions web innovantes et efficaces, en combinant
-        mes compétences techniques et ma passion pour le design.
-      </p>
-      <p>
-        En dehors du web, je partage ma vie entre Grenoble et la Haute-Savoie,
-        j’ai un gros chien et je n’ai pas encore trouvé de meilleur moyen pour
-        se reconnecter qu’une balade au milieu de la nature.
-      </p>
+
+      <article className="about_container">
+        <p>
+          Ces dernières années, j&apos;ai mis à jour mes compétences avec les
+          technologies (plus vraiment!) modernes comme Flexbox et Grid, en
+          suivant des cours en ligne, notamment sur freeCodeCamp où j&apos;ai
+          obtenu la certification &quot;Responsive Web Design&quot;. J&apos;ai
+          commencé à appréhender le SCSS, le référencement (SEO) et les
+          animations.
+        </p>
+      </article>
+
+      <article className="about_container">
+        <p>
+          Souhaitant évoluer vers le domaine de la programmation, j&apos;ai
+          décidé de me plonger dans Python. Le but: créer des outils basés sur
+          l&apos;intelligence artificielle, particulièrement pour l&apos;analyse
+          d&apos;images de microscopie. J&apos;ai appris à utiliser des
+          librairies comme Pandas, NumPy, OpenCV, et scikit-image, ainsi que des
+          outils d&apos;IA comme scikit-learn et Keras, tout en obtenant des
+          certifications de DataCamp.
+        </p>
+      </article>
+
+      <article className="about_container">
+        <p>
+          Tout ça en autodidacte: à l’époque Google était le meilleur des
+          professeurs (et chatGPT n’existait pas!)
+        </p>
+      </article>
+
+      <article className="about_container">
+        <p>
+          MAIS..., tous ces outils, basés sur des statistiques, ne me
+          correspondaient pas. L&apos;aspect visuel et l&apos;UX design me
+          manquaient. L&apos;idée avait fait son chemin et était tout simplement
+          devenue une évidence… J&apos;ai décidé de me reconvertir dans le
+          développement web, en suivant une formation
+          d&apos;intégrateur/développeur web en parallèle de mon travail.
+        </p>
+      </article>
+
+      <article className="about_container">
+        <p>
+          Aujourd&apos;hui, je me lance en freelance pour créer des sites web et
+          des outils interactifs. Mon portfolio présente mes projets, à la fois
+          ceux réalisés durant ma formation et mes initiatives personnelles. Mon
+          but est de proposer des solutions web innovantes et efficaces, en
+          combinant mes compétences techniques et ma passion pour le design.
+        </p>
+      </article>
+
+      <article className="about_container">
+        <p>
+          En dehors du web, je partage ma vie entre Grenoble et la Haute-Savoie,
+          j’ai un gros chien et je n’ai pas encore trouvé de meilleur moyen pour
+          se reconnecter qu’une balade au milieu de la nature.
+        </p>
+      </article>
+
       <h3>
         Lets go for a <FaBeer />?
       </h3>

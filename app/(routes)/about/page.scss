@@ -5,31 +5,13 @@
     @include main;
     border: 1px solid violet;
     padding: 1rem 2rem;
-    h1 {
-        font-size: 2rem;
-        font-weight: lighter;
-    }
+
 }
 
-
-
-
-
-
-
 .about_container {
-    border: 1px solid red;
-    img {
-        width: 5rem;
-        height: 5rem;
-        object-fit: cover;
-        border-radius: 50%;
-        float: left;
-        shape-outside: margin-box;
-        margin-right: 1rem;
-    }
+
     p {
-        border: 1px solid green;
+        text-indent: 1rem;
         text-align: justify;
     }
     /*     &::after {

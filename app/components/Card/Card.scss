@@ -1,6 +1,9 @@
 @use '/app/styles/sass/variables' as *;
 
 .card {
+    h3 {
+        font-weight: 500;
+    }
     &_top {
         position: relative;
         width: inherit;
@@ -72,8 +75,10 @@
         &_tech {
             list-style-type: none;
             display: flex;
+            flex-wrap: wrap;
             gap: 0.5rem;
             li {
+                font-size: 1rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
