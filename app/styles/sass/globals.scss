@@ -72,6 +72,13 @@ input, button, textarea, select {
   font: inherit; /*font-size, font-weight, and font-family*/
 }
 
+input, textarea {
+  border: none;
+  background: none;
+}
+
+
+
  button, dialog {
   background-color: transparent;
   color: inherit;

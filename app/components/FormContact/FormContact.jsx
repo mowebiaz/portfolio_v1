@@ -26,7 +26,7 @@ export function FormContact() {
   const closeDialog = () => {
     dialogRef.current?.close()
     reset()
-    clearErrors() // Efface les erreurs après la réinitialisation
+    clearErrors() // Efface les erreurs après la réinitialisation*/
   }
 
   const onSubmit = async (data) => {

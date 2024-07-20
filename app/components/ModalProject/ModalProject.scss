@@ -87,8 +87,9 @@
         }
 
         .context {
-            text-align: start;
+            
             h3 {
+                text-align: start;
                 text-decoration: underline;
                 /*                 display: inline-block;
                 position: relative;
@@ -101,6 +102,9 @@
                     left: 0;
                     bottom: -1px;
                 } */
+            }
+            p {
+                text-align: justify;
             }
         }
         .works {
