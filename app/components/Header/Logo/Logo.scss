@@ -1,10 +1,7 @@
 @use '../../../styles/sass/variables' as *;
 
-.logo svg {
-    display: none;
-}
 
-@media screen and (min-width: 768px) {
+
     .logo svg {
       display: block;
         width: 50px;
@@ -14,4 +11,3 @@
             fill: $secondary-color;
         }
     }
-}

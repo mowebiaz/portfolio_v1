@@ -1,12 +1,11 @@
-import { Logo } from './Logo/Logo'
-import { Navigation } from './Navigation/Navigation'
-import './Header.scss'
+import { NavDesktop } from './Navigation/NavDesktop/NavDesktop'
+import { NavMobile } from './Navigation/NavMobile/NavMobile'
 
 export function Header() {
   return (
     <header>
-      <Logo />
-      <Navigation />
+      <NavDesktop />
+      <NavMobile />
     </header>
   )
 }

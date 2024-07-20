@@ -1,0 +1,42 @@
+@use '/app/styles/sass/variables' as *;
+
+.desktop {
+    width: 100vw;
+    top: 0;
+    /*z-index: 99;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $background-color;
+    position: sticky;
+    padding: 1rem;
+    background-color: $font-color;
+
+    .activeLink {
+        color: $secondary-color;
+    }
+
+    &_nav_list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        gap: 1.5rem;
+        padding-block: 1rem; /*top and bottom */
+        padding-inline: clamp(3rem, 5vw, 10rem); /*left and right*/
+
+        li {
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+}
