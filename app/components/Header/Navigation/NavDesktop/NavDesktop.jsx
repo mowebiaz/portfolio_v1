@@ -1,6 +1,7 @@
 import { ActiveLink } from '../ActiveLink'
 import { Logo } from '../../Logo/Logo'
 import { navLinkList } from '../navLinkList'
+import { merienda } from '../../../../styles/fonts'
 import './NavDesktop.scss'
 
 export function NavDesktop() {

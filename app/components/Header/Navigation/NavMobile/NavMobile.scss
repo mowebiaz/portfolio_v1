@@ -16,15 +16,19 @@
     list-style: none;
     text-transform: uppercase;
     gap: 1.5rem;
-    letter-spacing: 2px;
     background-color: $font-color;
     color: $background-color;
     padding: 8rem 2rem;
     /*padding: min(30vh, 10rem) 2rem; /* à revoir */
     li {
-        &:hover {
+        a:hover {
             color: $secondary-color;
+            border-bottom: 2px solid $secondary-color;
         }
+        a.activeLink:hover {
+            border-bottom: 2px solid transparent;
+        }
+
     }
 }
 
@@ -44,4 +48,10 @@
     width: 1.5em;
     height: 1.5em;
   }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
 }

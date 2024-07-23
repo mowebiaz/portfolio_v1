@@ -5,7 +5,6 @@ import { useState, useRef } from 'react'
 import { useClickAway } from 'react-use'
 import { ActiveLink } from '../ActiveLink'
 import { BurgerIcon } from '../../BurgerIcon/BurgerIcon'
-import { MdHome } from 'react-icons/md'
 import { navLinkList } from '../navLinkList'
 import './NavMobile.scss'
 
