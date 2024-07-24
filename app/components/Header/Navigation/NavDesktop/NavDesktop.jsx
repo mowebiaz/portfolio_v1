@@ -1,6 +1,6 @@
 import { ActiveLink } from '../ActiveLink'
 import { Logo } from '../../Logo/Logo'
-import { navLinkList } from '../navLinkList'
+import { desktopLinkList } from '../navLinkList'
 import { merienda } from '../../../../styles/fonts'
 import './NavDesktop.scss'
 
@@ -10,7 +10,7 @@ export function NavDesktop() {
       <Logo />
       <nav className="desktop_nav">
         <ul className="desktop_nav_list">
-          {navLinkList.map(({ title, label }) => (
+          {desktopLinkList.map(({ title, label }) => (
             <li key={title}>
               <ActiveLink
                 href={title}

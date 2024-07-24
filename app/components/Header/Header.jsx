@@ -5,7 +5,7 @@ export function Header() {
   return (
     <header>
       <NavDesktop />
-      <NavMobile />
+        <NavMobile />
     </header>
   )
 }

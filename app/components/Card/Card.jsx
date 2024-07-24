@@ -1,13 +1,16 @@
 'use client'
 
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import { FaPlus } from 'react-icons/fa6'
+import { cardsVariants } from '../CardsContainer/CardsContainer'
 import './Card.scss'
+
 
 export function Card({ project, setSelectedProject }) {
   return (
     <>
-      <article className="card">
+      <motion.article className="card" variants={cardsVariants}>
         <div className="card_top">
           <Image
             src={project.image}
@@ -30,7 +33,7 @@ export function Card({ project, setSelectedProject }) {
             ))}
           </ul>
         </div>
-      </article>
+      </motion.article>
     </>
   )
 }

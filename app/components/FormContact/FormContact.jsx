@@ -1,14 +1,21 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser'
+import { motion } from 'framer-motion'
 import { Loader } from '/public/icons/Loader'
 import './FormContact.scss'
 
 const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID
 const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID
 const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY
+
+const formVariants = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1, transition: { duration: 0.3 } },
+  exit: { opacity: 0 },
+}
 
 export function FormContact() {
   const [error, setError] = useState(null)
@@ -24,9 +31,9 @@ export function FormContact() {
   } = useForm({ mode: 'onBlur' })
 
   const closeDialog = () => {
-    dialogRef.current?.close()
     reset()
-    clearErrors() // Efface les erreurs après la réinitialisation*/
+    //clearErrors() // Efface les erreurs après la réinitialisation*/
+    dialogRef.current?.close()
   }
 
   const onSubmit = async (data) => {
@@ -44,7 +51,6 @@ export function FormContact() {
         },
         publicKey
       )
-
       setSuccess(true)
       dialogRef.current?.showModal()
     } catch (error) {
@@ -54,9 +60,12 @@ export function FormContact() {
   }
 
   return (
-    <form
+    <motion.form
       onSubmit={handleSubmit(onSubmit)}
       className="formContact"
+      variants={formVariants}
+      initial="initial"
+      animate="animate"
     >
       <div>
         <label htmlFor="name">Nom:</label>
@@ -112,6 +121,6 @@ export function FormContact() {
         {success && <p>Message envoyé avec succès!</p>}
         <button onClick={closeDialog}>Fermer</button>
       </dialog>
-    </form>
+    </motion.form>
   )
 }

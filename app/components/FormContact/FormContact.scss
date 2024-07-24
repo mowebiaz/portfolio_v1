@@ -4,11 +4,13 @@
 
 .formContact {
     width: clamp(18rem, 50vw, 35rem);
+    border-radius: 1.25rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: clamp(0.5rem, 4vw, 5rem);
-    box-shadow: 0px 0px 20px hsla(223, 100%, 50%, 0.5);
+    box-shadow: 0px 0px 20px color.scale($font-color, $alpha: -20%);
 
     div {
         display: flex;
