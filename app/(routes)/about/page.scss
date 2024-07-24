@@ -1,11 +1,19 @@
 @use '/app/styles/sass/variables' as *;
 @use '/app/styles/sass/mixins' as *;
-//$PUBLIC_URL: unquote('~'+ '/public');
+$PUBLIC_URL: unquote('~'+ '/public');
 
 #about {
     @include main;
     border: 1px solid violet;
     padding: 1rem 2rem;
+    h3 svg {
+        fill: $font-color;
+        vertical-align: middle;
+        height: 100px;
+        width: 100px;
+        stroke: red;
+        stroke-width: 5;
+    }
 }
 
 .about_title {
@@ -16,52 +24,29 @@
     gap: 1rem;
     width: 100%;
 
-
     &_image {
         width: clamp(15rem, 40vw, 25rem);
-
-        /*position: relative;
-                 .image-base,
-        .image-mask {
-            position: absolute;
-            top: 0;
-            left: 0;
-            object-fit: cover;
-            object-position: center;
-        }
-        .image-mask {
-            mix-blend-mode:darken;
-        } */
+        aspect-ratio: 1;
+        position: relative; /* Important for the fill property */
 
         .profile_image {
             display: block;
-            mask: url(https://assets.codepen.io/1101822/circles-mask-whole.svg)
-                no-repeat center;
+            mask: url('#{$PUBLIC_URL}/images/asset2.svg') no-repeat center;
             width: 100%;
-            aspect-ratio: 1;
+            /*aspect-ratio: 1;*/
             object-fit: cover;
         }
     }
 
-
-.about_container {
-    p {
-        text-align: justify;
-    }
-    /*     &::after {
+    .about_container {
+        p {
+            text-align: justify;
+        }
+        /*     &::after {
         content: '';
         display: block;
         clear: both;
     } */
-}
+    }
 
-
-h3 svg {
-    fill: $font-color;
-    vertical-align: middle;
-    height: 100px;
-    width: 100px;
-    stroke: red;
-    stroke-width: 5;
-}
 }

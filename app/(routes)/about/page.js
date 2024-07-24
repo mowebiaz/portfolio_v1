@@ -5,6 +5,8 @@ import { FaBeer } from 'react-icons/fa'
 import './page.scss'
 import Image from 'next/image'
 
+import icon from '../../../public/icons/react_icon.svg'
+
 export const metadata = {
   title: 'A propos',
 }
@@ -12,10 +14,17 @@ export const metadata = {
 export default function About() {
   return (
     <main id="about">
+      {/* <Image src={icon} alt="asset" width={300} height={300}/>
+       */}
       <div className="about_title">
         <div className="about_title_image">
-
-        <img className="profile_image" src="/images/bank-tree.webp" alt='kmkmk'></img>
+          <Image
+            className="profile_image"
+            src="/images/bank-tree.webp"
+            alt="kmkmk"
+            fill={true}
+            sizes='(100vw, 100vh)'
+          />
         </div>
         <h1 className={merienda.className}>Qui suis-je ?</h1>
       </div>
@@ -90,7 +99,6 @@ export default function About() {
       <h3>
         Lets go for a <FaBeer />?
       </h3>
-
     </main>
   )
 }

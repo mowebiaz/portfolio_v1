@@ -1,9 +1,38 @@
 @use '../../styles/sass/variables' as *;
 
 footer {
-  margin-top: auto; /* for sticky footer */
-  width: 100vw;
-  background-color: $font-color;
-  padding: 0.5rem;
-  color: $background-color;
+    margin-top: auto; /* for sticky footer */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $font-color;
+    padding: 0.5rem;
+    color: $background-color;
+    p {
+        font-size: 1rem;
+    }
+
+}
+.footer_links {
+    display: flex;
+    align-items: center;
+    a {
+        height: 50px;
+        width: 50px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            svg {
+                fill: $secondary-color;
+            }
+        }
+        svg {
+            fill: $background-color;
+            width: 30px;
+            height: 30px;
+        }
+    }
 }
