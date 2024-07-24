@@ -1,23 +1,29 @@
 'use client'
 
-import Link from 'next/link'
 import { useState, useRef } from 'react'
 import { useClickAway } from 'react-use'
+import { motion, AnimatePresence } from 'framer-motion'
 import { ActiveLink } from '../ActiveLink'
 import { BurgerIcon } from '../../BurgerIcon/BurgerIcon'
-import { navLinkList } from '../navLinkList'
+import { mobileLinkList } from '../navLinkList'
 import './NavMobile.scss'
+
+const navMobileVariants = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1, transition: { staggerChildren: 0.07 } },
+  exit: {
+    x: '100%',
+    opacity: 0,
+  },
+}
 
 export function NavMobile() {
   const [isOpen, setIsOpen] = useState(false)
   const ref = useRef(null)
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
+    setIsOpen((prev) => !prev)
   }
-
-  // useClickAway hook from React-Use library to detect when a user clicks outside the menu.
-  // When this happens, it triggers a function that closes the menu by setting isOpen to false.
 
   useClickAway(ref, () => {
     setIsOpen(false)
@@ -37,29 +43,33 @@ export function NavMobile() {
         <span className="sr-only">Menu</span>
         <BurgerIcon isOpen={isOpen} />
       </button>
-      {isOpen && (
-
-      <nav className="mobile_nav">
-        <ul className="mobile_nav_list">
-          <Link
-            className="homeLink"
-            href="/"
+      <AnimatePresence>
+        {isOpen && (
+          <motion.nav
+            className="mobile_nav"
+            variants={navMobileVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
           >
-            Home
-          </Link>
-          {navLinkList.map(({ title, label }) => (
-            <li key={title}>
-              <ActiveLink
-                href={title}
-                activeClassName="activeLink"
-              >
-                {label}
-              </ActiveLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
-      )}
+            <ul className="mobile_nav_list">
+              {mobileLinkList.map(({ title, label }) => (
+                <motion.li
+                  key={title}
+                  variants={navMobileVariants}
+                >
+                  <ActiveLink
+                    href={title}
+                    activeClassName="activeLink"
+                  >
+                    {label}
+                  </ActiveLink>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </div>
   )
 }

@@ -4,25 +4,21 @@ $PUBLIC_URL: unquote('~'+ '/public');
 
 #about {
     @include main;
-    border: 1px solid violet;
-    padding: 1rem 2rem;
-    h3 svg {
-        fill: $font-color;
-        vertical-align: middle;
-        height: 100px;
-        width: 100px;
-        stroke: red;
-        stroke-width: 5;
-    }
+    padding: 2.5rem;
+
 }
 
-.about_title {
+.about_hero {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
     width: 100%;
+
+    h1 {
+        padding-inline-start: 1rem;
+    }
 
     &_image {
         width: clamp(15rem, 40vw, 25rem);
@@ -37,16 +33,21 @@ $PUBLIC_URL: unquote('~'+ '/public');
             object-fit: cover;
         }
     }
+}
 
-    .about_container {
-        p {
-            text-align: justify;
+.about_content {
+    p {
+        text-align: justify;
+        margin-top: 1rem;
+    }
+    a {
+        text-decoration: underline $secondary-color;
+        border: 2px solid transparent;
+
+        &:hover {
+            border: 2px solid $secondary-color;
+            text-decoration: none;
         }
-        /*     &::after {
-        content: '';
-        display: block;
-        clear: both;
-    } */
     }
 
 }
