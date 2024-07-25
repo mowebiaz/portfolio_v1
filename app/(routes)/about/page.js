@@ -34,7 +34,7 @@ export default function About() {
           <p>
             Ces dernières années, j&apos;ai mis à jour mes compétences avec les
             technologies (plus vraiment!) modernes comme Flexbox et Grid, en
-            suivant des cours en ligne, notamment sur <a href="https://www.freecodecamp.org/">freeCodeCamp</a> où j&apos;ai
+            suivant des cours en ligne, notamment sur <a href="https://www.freecodecamp.org/" target='_blank' rel="noopener noreferrer">freeCodeCamp</a> où j&apos;ai
             obtenu la certification &quot;Responsive Web Design&quot;. J&apos;ai
             commencé à appréhender le SCSS, le référencement (SEO) et les
             animations.
@@ -61,7 +61,7 @@ export default function About() {
             manquaient. L&apos;idée avait fait son chemin et était tout
             simplement devenue une évidence… J&apos;ai décidé de me reconvertir
             dans le développement web, en suivant une formation
-            d&apos;intégrateur/développeur web en parallèle de mon travail.
+            d&apos;intégrateur/développeur web chez <a href="https://openclassrooms.com/">OpenClassrooms</a> en parallèle de mon travail.
           </p>
 
           <p>

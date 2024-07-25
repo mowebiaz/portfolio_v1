@@ -12,6 +12,6 @@ export function Footer() {
         <FaLinkedin />
       </a>
     </div>
-    <p> © 2024 Morgane. Tous droits réservés.</p>
+    <p> © 2024 Morgane Couvet. Tous droits réservés.</p>
   </footer>
 }

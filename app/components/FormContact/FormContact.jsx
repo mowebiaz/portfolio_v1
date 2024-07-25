@@ -32,7 +32,7 @@ export function FormContact() {
 
   const closeDialog = () => {
     reset()
-    //clearErrors() // Efface les erreurs après la réinitialisation*/
+    clearErrors() 
     dialogRef.current?.close()
   }
 
@@ -73,8 +73,8 @@ export function FormContact() {
           type="text"
           name="name"
           id="name"
-          {...register('name', { required: 'Vous devez indiquer votre nom' })}
           autoComplete="name"
+          {...register('name', { required: 'Vous devez indiquer votre nom' })}
         />
         {errors.name && <p className="alert">{errors.name.message}</p>}
       </div>
@@ -84,6 +84,7 @@ export function FormContact() {
           type="email"
           name="email"
           id="email"
+          autoComplete='email'
           {...register('email', {
             required: 'Vous devez indiquer une adresse email',
             pattern: {
@@ -91,7 +92,6 @@ export function FormContact() {
               message: "L'email n'est pas valide",
             },
           })}
-          autoComplete="email"
         />
         {errors.email && <p className="alert">{errors.email.message}</p>}
       </div>
@@ -119,7 +119,7 @@ export function FormContact() {
       >
         {error && <p>Problème d&apos;envoi</p>}
         {success && <p>Message envoyé avec succès!</p>}
-        <button onClick={closeDialog}>Fermer</button>
+        <button type="button" onClick={closeDialog}>Fermer</button>
       </dialog>
     </motion.form>
   )
