@@ -1,0 +1,10 @@
+@use '/app/styles/sass/mixins' as *;
+
+#skillsPage {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /* for sticky footer */
+  h1 {
+    text-align: center;
+  }
+}

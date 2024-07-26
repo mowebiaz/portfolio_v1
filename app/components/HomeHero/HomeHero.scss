@@ -10,39 +10,37 @@
     flex-wrap: wrap;
     gap: 1rem;
     .cta {
-padding: 0 1rem;
+        padding: 0 1rem;
     }
     .description {
-      padding: 0 1rem;
-
+        padding: 0 1rem;
     }
 
     .links {
-      display: flex;
-      justify-content: center;
+        display: flex;
+        justify-content: center;
         a {
-          display: flex;
-          justify-content: center;
+            display: flex;
+            justify-content: center;
             @include button;
         }
         &_contact {
-          background-color: $primary-color;
-          color: $background-color;
-          transition: all 250ms ease-in-out;
-          &:hover {
-              background-color: color.scale($primary-color, $lightness: 20%);
-              color: color.scale($background-color, $lightness: 10%);
-              box-shadow: 0px 0px 8px 1px $primary-color;
-          }
+            background-color: $primary-color;
+            color: $background-color;
+            transition: all 250ms ease-in-out;
+            &:hover {
+                background-color: color.scale($primary-color, $lightness: 20%);
+                color: color.scale($background-color, $lightness: 10%);
+                box-shadow: 0px 0px 8px 1px $primary-color;
+            }
         }
         &_portfolio {
-          border: 1px solid $primary-color;
-          transition: all 250ms ease-in-out;
+            border: 1px solid $primary-color;
+            transition: all 250ms ease-in-out;
 
-          &:hover {
-            box-shadow: 0px 0px 8px 1px $primary-color;
-
-          }
+            &:hover {
+                box-shadow: 0px 0px 8px 1px $primary-color;
+            }
         }
     }
 }

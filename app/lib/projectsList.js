@@ -63,7 +63,7 @@ export const projectsList = [
     technologies: ["API", "Javascript"]
   }, 
   { id: 6,
-    name: "PrintIt",
+    name: "Print It",
     image: "/images/colors.jpg",
     href: "https://mowebiaz.github.io/PrintIt/",
     github:"https://github.com/mowebiaz/PrintIt",

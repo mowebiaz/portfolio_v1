@@ -1,0 +1,36 @@
+@use '/app/styles/sass/variables' as *;
+
+.skillCard {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  &_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+svg.icon {
+  &_HTML {
+    fill: #E34F26;
+  }
+  &_React {
+    fill: #61DAFB;
+  }
+  &_Sass {
+    fill: #CC6699;
+  }
+  &_Redux {
+    fill:#764ABC;
+  }
+  &_Notion {
+    fill: #000000;
+  }
+}

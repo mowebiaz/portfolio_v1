@@ -52,7 +52,8 @@ export default function About() {
             l&apos;analyse d&apos;images de microscopie. J&apos;ai appris à
             utiliser des librairies comme Pandas, NumPy, OpenCV, et
             scikit-image, ainsi que des outils d&apos;IA comme scikit-learn et
-            Keras, tout en obtenant des certifications de <a href="https://www.datacamp.com/">DataCamp</a> .
+            Keras, tout en obtenant des certifications de 
+            <a href="https://www.datacamp.com/" target='_blank' rel="noopener noreferrer">DataCamp</a>.
           </p>
 
           <p>
@@ -61,7 +62,8 @@ export default function About() {
             manquaient. L&apos;idée avait fait son chemin et était tout
             simplement devenue une évidence… J&apos;ai décidé de me reconvertir
             dans le développement web, en suivant une formation
-            d&apos;intégrateur/développeur web chez <a href="https://openclassrooms.com/">OpenClassrooms</a> en parallèle de mon travail.
+            d&apos;intégrateur/développeur web chez <a href="https://openclassrooms.com/" target='_blank' rel="noopener noreferrer">OpenClassrooms</a> en parallèle de mon travail.
+            
           </p>
 
           <p>
