@@ -3,13 +3,12 @@
 .skillCard {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.2rem;
   &_icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
-    width: 60px;
+
     svg {
       width: 40px;
       height: 40px;
@@ -31,6 +30,18 @@ svg.icon {
     fill:#764ABC;
   }
   &_Notion {
+    fill: #000000;
+  }
+  &_JavaScript {
+    fill: #F7DF1E;
+  }
+  &_Git {
+    fill: #F05032;
+  }
+  &_GitHub {
+    fill: #24292f;
+  }
+  &_Next.js {
     fill: #000000;
   }
 }

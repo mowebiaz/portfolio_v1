@@ -16,6 +16,7 @@ export function ProjectCard({ project, setSelectedProject }) {
             src={project.image}
             alt={project.name}
             fill={true}
+            sizes="(100vw, 100vh)"
           />
           <div className="projectCard_icon">
             <div className="projectCard_icon_content">

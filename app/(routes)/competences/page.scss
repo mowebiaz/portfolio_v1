@@ -3,6 +3,7 @@
 #skillsPage {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   flex: 1 0 auto; /* for sticky footer */
   h1 {
     text-align: center;

@@ -1,38 +1,9 @@
 @use '/app/styles/sass/variables' as *;
 @use '/app/styles/sass/mixins' as *;
-$PUBLIC_URL: unquote('~'+ '/public');
 
 #about {
     @include main;
     padding: 2.5rem;
-
-}
-
-.about_hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 100%;
-
-    h1 {
-        padding-inline-start: 1rem;
-    }
-
-    &_image {
-        width: clamp(15rem, 40vw, 25rem);
-        aspect-ratio: 1;
-        position: relative; /* Important for the fill property */
-
-        .profile_image {
-            display: block;
-            mask: url('#{$PUBLIC_URL}/images/asset2.svg') no-repeat center;
-            width: 100%;
-            /*aspect-ratio: 1;*/
-            object-fit: cover;
-        }
-    }
 }
 
 .about_content {
