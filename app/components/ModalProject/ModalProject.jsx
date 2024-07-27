@@ -1,5 +1,6 @@
 import { forwardRef } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import { merienda } from '../../styles/fonts'
 import { FaLink } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa6'

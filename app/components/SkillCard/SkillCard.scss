@@ -1,0 +1,44 @@
+@use '/app/styles/sass/variables' as *;
+
+.skillCard {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding-left: 0.5rem;
+    width: 100%;
+
+    &_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.skillCard_icon {
+    &.react svg {
+        fill: #61dafb;
+    }
+    &.html svg {
+        fill: #e34f26;
+    }
+    &.css svg {
+        fill: #1572b6;
+    }
+    &.sass svg {
+        fill: #cc6699;
+    }
+    &.javascript svg {
+        fill: #f7df1e;
+    }
+    &.redux svg {
+        fill: #764abc;
+    }
+    &.git svg {
+        fill: #f05032;
+    }
+}

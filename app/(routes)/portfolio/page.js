@@ -1,4 +1,4 @@
-import { CardsContainer } from '../../components/CardsContainer/CardsContainer'
+import { ProjectsCardsContainer } from '../../components/ProjectsCardsContainer/ProjectsCardsContainer'
 import { merienda } from '../../styles/fonts'
 import './page.scss'
 
@@ -11,7 +11,7 @@ export default function Portfolio() {
   return (
     <main id="portfolio">
       <h1 className={merienda.className}>Mes projets</h1>
-      <CardsContainer />
+      <ProjectsCardsContainer />
     </main>
   )
 }

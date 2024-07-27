@@ -2,17 +2,17 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Card } from '../Card/Card'
+import { ProjectCard } from '../ProjectCard/ProjectCard'
 import { ModalProject } from '../ModalProject/ModalProject'
 import { projectsList } from '../../lib/projectsList'
-import './CardsContainer.scss'
+import './ProjectsCardsContainer.scss'
 
-export const cardsVariants = {
+export const projectsCardsVariants = {
   initial: { opacity: 0 },
   animate: { opacity: 1, transition: { staggerChildren: 0.05 } },
 }
 
-export function CardsContainer() {
+export function ProjectsCardsContainer() {
   const [selectedProject, setSelectedProject] = useState(null)
   const dialogRef = useRef(null)
 
@@ -41,9 +41,9 @@ export function CardsContainer() {
 
   return (
     <>
-      <motion.div className="cards" variants={cardsVariants} initial="initial" animate="animate">
+      <motion.div className="projects_cards" variants={projectsCardsVariants} initial="initial" animate="animate">
         {projectsList.map((project) => (
-          <Card
+          <ProjectCard
             key={project.id}
             project={project}
             setSelectedProject={setSelectedProject}

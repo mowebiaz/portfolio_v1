@@ -8,8 +8,6 @@ export default function Home() {
       <main id="home">
         <HomeHero />
         <section className="content">
-
-
           <p>This is my portfolio</p>
 
           <p>

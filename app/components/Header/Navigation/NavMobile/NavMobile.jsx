@@ -57,6 +57,7 @@ export function NavMobile() {
                 <motion.li
                   key={title}
                   variants={navMobileVariants}
+                  onClick={toggleMenu}
                 >
                   <ActiveLink
                     href={title}
