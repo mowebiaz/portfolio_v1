@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   gap: 0.2rem;
+  padding-left: 0.5rem;
   &_icon {
     display: flex;
     justify-content: center;
@@ -43,5 +44,11 @@ svg.icon {
   }
   &_Next.js {
     fill: #000000;
+  }
+  &_CSS {
+    fill:#1572B6;
+  }
+  &_VSCode {
+    fill: #0065A9
   }
 }

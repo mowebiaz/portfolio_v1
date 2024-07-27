@@ -9,7 +9,8 @@ export function AboutHero() {
       <Image
         className="profile_image"
         src="/images/morgane-couvet.webp"
-        alt="kmkmk"
+        alt="Morgane Couvet"
+        priority
         fill={true}
         sizes="(100vw, 100vh)"
       />

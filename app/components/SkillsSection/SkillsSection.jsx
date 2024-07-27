@@ -1,5 +1,5 @@
-import { SkillsGrid } from "../SkillsGrid/SkillsGrid"
-import { merienda } from "../../styles/fonts"
+import { SkillsGrid } from '../SkillsGrid/SkillsGrid'
+import { merienda } from '../../styles/fonts'
 import './SkillsSection.scss'
 
 

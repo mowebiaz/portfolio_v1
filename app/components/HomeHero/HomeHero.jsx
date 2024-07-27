@@ -1,10 +1,19 @@
 'use client'
 
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import Image from 'next/image'
+import { delay, easeIn, motion } from 'framer-motion'
 import { merienda } from '../../styles/fonts'
 import './HomeHero.scss'
-import Image from 'next/image'
+
+const titleVariants = {
+  initial: { opacity: 0 },
+  animate: {
+    opacity: 1,
+    transition: { staggerChildren: 0.05, ease: "easeIn" },
+    delay: 1,
+  },
+}
 
 export const HomeHero = () => {
   return (
@@ -12,7 +21,23 @@ export const HomeHero = () => {
       <div className="cta">
         <div className="cta_content">
           <h1 className={merienda.className}>Morgane Couvet</h1>
-          <h2 className={merienda.className}>Développeur Web</h2>
+          <motion.h2
+            className={merienda.className}
+            variants={titleVariants}
+            initial="initial"
+            animate="animate"
+          >
+            {'Développeur Web'.split('').map((char, index) => (
+              <motion.span
+                key={index}
+                className="letter"
+                variants={titleVariants}
+
+              >
+                {char}
+              </motion.span>
+            ))}
+          </motion.h2>
         </div>
         <div className="cta_buttons">
           <Link
@@ -33,6 +58,7 @@ export const HomeHero = () => {
         <Image
           src="/images/home_image.webp"
           alt="Morgane Couvet"
+          priority
           fill={true}
           sizes="(100vw, 100vh)"
         />
