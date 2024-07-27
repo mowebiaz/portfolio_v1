@@ -1,54 +1,44 @@
 @use '/app/styles/sass/variables' as *;
 
 .skillCard {
-  display: flex;
-  align-items: center;
-  gap: 0.2rem;
-  padding-left: 0.5rem;
-  &_icon {
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 0.4rem;
+    padding-left: 0.5rem;
+    width: 100%;
 
-    svg {
-      width: 40px;
-      height: 40px;
+    &_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: 40px;
+            height: 40px;
+        }
     }
-  }
 }
 
-svg.icon {
-  &_HTML {
-    fill: #E34F26;
-  }
-  &_React {
-    fill: #61DAFB;
-  }
-  &_Sass {
-    fill: #CC6699;
-  }
-  &_Redux {
-    fill:#764ABC;
-  }
-  &_Notion {
-    fill: #000000;
-  }
-  &_JavaScript {
-    fill: #F7DF1E;
-  }
-  &_Git {
-    fill: #F05032;
-  }
-  &_GitHub {
-    fill: #24292f;
-  }
-  &_Next.js {
-    fill: #000000;
-  }
-  &_CSS {
-    fill:#1572B6;
-  }
-  &_VSCode {
-    fill: #0065A9
-  }
+.skillCard_icon {
+    &.react svg {
+        fill: #61dafb;
+    }
+    &.html svg {
+        fill: #e34f26;
+    }
+    &.css svg {
+        fill: #1572b6;
+    }
+    &.sass svg {
+        fill: #cc6699;
+    }
+    &.javascript svg {
+        fill: #f7df1e;
+    }
+    &.redux svg {
+        fill: #764abc;
+    }
+    &.git svg {
+        fill: #f05032;
+    }
 }

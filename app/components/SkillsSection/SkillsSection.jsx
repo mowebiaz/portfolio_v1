@@ -1,3 +1,5 @@
+'use client'
+
 import { SkillsGrid } from '../SkillsGrid/SkillsGrid'
 import { merienda } from '../../styles/fonts'
 import './SkillsSection.scss'
