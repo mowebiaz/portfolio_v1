@@ -37,8 +37,8 @@ export function NavMobile() {
       <button
         className="burger-button"
         onClick={toggleMenu}
-        /*                 aria-controls="primary-navigation"
-        aria-expanded="false" */
+        aria-controls="navigation"
+        aria-expanded={isOpen ? 'true' : 'false'}
       >
         <span className="sr-only">Menu</span>
         <BurgerIcon isOpen={isOpen} />
@@ -46,6 +46,7 @@ export function NavMobile() {
       <AnimatePresence>
         {isOpen && (
           <motion.nav
+            id="navigation"
             className="mobile_nav"
             variants={navMobileVariants}
             initial="initial"

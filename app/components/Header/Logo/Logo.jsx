@@ -6,6 +6,7 @@ export function Logo() {
     <Link
       className="logo"
       href="/"
+      title='Accueil'
     >
       <svg viewBox="0 0 75 75">
         <path d="M 2.0711 37 L 16.2132 22.8579 L 16.2132 51.1421 L 2.0711 37 Z" />

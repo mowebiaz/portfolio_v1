@@ -118,7 +118,7 @@ export function FormContact() {
       >
         {error && <p>Problème d&apos;envoi</p>}
         {success && <p>Message envoyé avec succès!</p>}
-        <button type="button" onClick={closeDialog}>Fermer</button>
+        <button type="button" onClick={closeDialog} aria-label="Fermer">Fermer</button>
       </dialog>
     </motion.form>
   )

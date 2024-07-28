@@ -6,8 +6,6 @@ import { FaLink } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa6'
 import './ModalProject.scss'
 
-
-
 export const ModalProject = forwardRef(function ModalProject(
   { content, onCloseModal },
   ref
@@ -16,8 +14,7 @@ export const ModalProject = forwardRef(function ModalProject(
     <dialog
       className="dialogProject"
       ref={ref}
-
-
+      od="dialogProject"
     >
       {content && (
         <div className="dialogProject_content">
@@ -74,6 +71,7 @@ export const ModalProject = forwardRef(function ModalProject(
           <button
             className="closeButton"
             onClick={onCloseModal}
+            aria-label="Fermer la fenêtre"
           >
             Close
           </button>

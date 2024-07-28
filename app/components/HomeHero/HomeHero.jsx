@@ -72,7 +72,7 @@ export const HomeHero = () => {
           alt="Morgane Couvet"
           priority
           fill={true}
-          sizes="(100vw, 100vh)"
+          sizes="(25rem, 100vh)"
         />
       </div>
     </section>
