@@ -41,4 +41,15 @@
     &.git svg {
         fill: #f05032;
     }
+    &.responsive svg {
+        fill: $font-color;
+        width: 60px;
+        height: 60px;
+    }
+    &.performances svg {
+        fill: $primary-color;
+    }
+    &.accessibilité svg {
+        fill: $primary-color;
+    }
 }

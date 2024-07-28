@@ -1,10 +1,11 @@
+
 import { forwardRef } from 'react'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import { merienda } from '../../styles/fonts'
 import { FaLink } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa6'
 import './ModalProject.scss'
+
 
 
 export const ModalProject = forwardRef(function ModalProject(
@@ -15,6 +16,7 @@ export const ModalProject = forwardRef(function ModalProject(
     <dialog
       className="dialogProject"
       ref={ref}
+
 
     >
       {content && (

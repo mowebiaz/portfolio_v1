@@ -10,8 +10,16 @@ const titleVariants = {
   initial: { opacity: 0 },
   animate: {
     opacity: 1,
-    transition: { staggerChildren: 0.05, ease: "easeIn" },
+    transition: { staggerChildren: 0.05, easeIn },
     delay: 1,
+  },
+}
+
+const buttonsVariants = {
+  initial: { opacity: 0 },
+  animate: {
+    opacity: 1,
+    transition: { staggerChildren: 0.05, easeIn, duration: 1 },
   },
 }
 
@@ -32,14 +40,18 @@ export const HomeHero = () => {
                 key={index}
                 className="letter"
                 variants={titleVariants}
-
               >
                 {char}
               </motion.span>
             ))}
           </motion.h2>
         </div>
-        <div className="cta_buttons">
+        <motion.div
+          className="cta_buttons"
+          variants={buttonsVariants}
+          initial="initial"
+          animate="animate"
+        >
           <Link
             href="/contact"
             className="cta_buttons_contact"
@@ -52,7 +64,7 @@ export const HomeHero = () => {
           >
             Portfolio
           </Link>
-        </div>
+        </motion.div>
       </div>
       <div className="image">
         <Image

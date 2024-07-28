@@ -9,7 +9,7 @@ import './ProjectsCardsContainer.scss'
 
 export const projectsCardsVariants = {
   initial: { opacity: 0 },
-  animate: { opacity: 1, transition: { staggerChildren: 0.05 } },
+  animate: { opacity: 1, transition: { staggerChildren: 0.1 } },
 }
 
 export function ProjectsCardsContainer() {
