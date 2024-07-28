@@ -7,6 +7,7 @@ export async function POST(request) {
   const serviceID = process.env.SERVICE_ID;
   const templateID = process.env.TEMPLATE_ID;
   const publicKey = process.env.PUBLIC_KEY;
+  const privateKey = process.env.PRIVATE_KEY;
 
   const templateParams = {
     name,
@@ -23,6 +24,7 @@ export async function POST(request) {
       service_id: serviceID,
       template_id: templateID,
       user_id: publicKey,
+      accessToken: privateKey, 
       template_params: templateParams,
     }),
   });
