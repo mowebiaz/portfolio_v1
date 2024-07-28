@@ -1,15 +1,15 @@
 'use client'
 
-import { useState, useRef, useEffect, useCallback } from 'react'
+import { useState, useRef } from 'react'
 import { useForm } from 'react-hook-form'
-import emailjs from '@emailjs/browser'
+//import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
 import { Loader } from '/public/icons/Loader'
 import './FormContact.scss'
 
-const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID
+/* const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID
 const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID
-const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY
+const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY */
 
 const formVariants = {
   initial: { opacity: 0 },
@@ -35,11 +35,11 @@ export function FormContact() {
     dialogRef.current?.close()
   }
 
-  const onSubmit = async (data) => {
+   const onSubmit = async (data) => {
     setError(null)
     setSuccess(false)
 
-    try {
+    /*try {
       const result = await emailjs.send(
         serviceID,
         templateID,
@@ -55,6 +55,32 @@ export function FormContact() {
     } catch (error) {
       setError(true)
       dialogRef.current?.showModal()
+    }
+  } */
+
+    try {
+      const response = await fetch('/api/sendemail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          message: data.text,
+        }),
+      });
+
+      if (response.ok) {
+        setSuccess(true);
+      } else {
+        setError(true);
+      }
+
+      dialogRef.current?.showModal();
+    } catch (error) {
+      setError(true);
+      dialogRef.current?.showModal();
     }
   }
 
