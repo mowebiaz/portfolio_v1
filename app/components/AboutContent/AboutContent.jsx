@@ -12,15 +12,15 @@ export function AboutContent() {
   return (
     <motion.div className="about_content" variants={aboutContentVariants} initial="initial" animate="animate">
       <motion.p >
-        Ancienne scientifique, je me suis formée à HTML et CSS il y a un certain
+        Actuellement (encore) scientifique, je me suis formée à HTML et CSS il y a un certain
         nombre d’années. J&apos;ai pris plaisir à créer plusieurs sites web pour
         des journées scientifiques ou des projets plus personnels, ce qui
         m&apos;a motivée à approfondir mes compétences.
       </motion.p>
 
       <motion.p >
-        Ces dernières années, j&apos;ai mis à jour mes compétences avec les
-        technologies (plus vraiment!) modernes comme Flexbox et Grid, en suivant
+        Ces dernières années, j&apos;ai mis à jour ces compétences avec les
+        technologies (plus vraiment !) modernes comme Flexbox et Grid, en suivant
         des cours en ligne, notamment sur
         <a
           href="https://www.freecodecamp.org/"
@@ -36,7 +36,7 @@ export function AboutContent() {
 
       <motion.p >
         Tout ça en autodidacte: à l’époque Google était le meilleur des
-        professeurs (et chatGPT n’existait pas!)
+        professeurs (et chatGPT n’existait pas !).
       </motion.p>
 
       <motion.p >
@@ -58,24 +58,23 @@ export function AboutContent() {
       </motion.p>
 
       <motion.p >
-        MAIS..., tous ces outils, basés sur des statistiques, ne me
+        Mais... tous ces outils, basés sur des statistiques, ne me
         correspondaient pas. L&apos;aspect visuel et l&apos;UX design me
         manquaient. L&apos;idée avait fait son chemin et était tout simplement
         devenue une évidence… J&apos;ai décidé de me reconvertir dans le
         développement web, en suivant une formation
-        d&apos;intégrateur/développeur web chez
-        <a
+        d&apos;intégrateur/développeur web chez <a
           href="https://openclassrooms.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          OpenClassrooms
+           OpenClassrooms
         </a>
         en parallèle de mon travail.
       </motion.p>
 
       <motion.p >
-        Aujourd&apos;hui, je me lance en freelance pour créer des sites web et
+        Bientôt, je me lance en freelance pour créer des sites web et
         des outils interactifs. Mon but est de proposer des solutions web
         innovantes et efficaces, en combinant mes compétences techniques et ma
         passion pour le design.
@@ -84,7 +83,7 @@ export function AboutContent() {
       <motion.p >
         En dehors du web, je partage ma vie entre Grenoble et la Haute-Savoie,
         j’ai un gros chien et je n’ai pas encore trouvé de meilleur moyen pour
-        se reconnecter qu’une balade au milieu de la nature.
+        se reconnecter qu’une balade au milieu de la nature...
       </motion.p>
     </motion.div>
   )
