@@ -37,6 +37,7 @@ export function NavMobile() {
       <button
         className="burger-button"
         onClick={toggleMenu}
+        aria-label='Menu'
         aria-controls="navigation"
         aria-expanded={isOpen ? 'true' : 'false'}
       >

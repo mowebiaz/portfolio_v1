@@ -10,7 +10,10 @@ export const metadata = {
   },
   description:
     'Morgane Couvet - développeur web freelance à Grenoble. Spécialisée en création de sites web modernes et performants, je transforme vos idées en réalité numérique.',
-}
+  icons: {
+    icon: '/icon.ico',
+  },
+  }
 
 export default function RootLayout({ children }) {
   return (

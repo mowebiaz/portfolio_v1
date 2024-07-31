@@ -2,14 +2,9 @@
 
 import { useState, useRef } from 'react'
 import { useForm } from 'react-hook-form'
-//import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
 import { Loader } from '/public/icons/Loader'
 import './FormContact.scss'
-
-/* const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID
-const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID
-const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY */
 
 const formVariants = {
   initial: { opacity: 0 },
@@ -38,25 +33,6 @@ export function FormContact() {
    const onSubmit = async (data) => {
     setError(null)
     setSuccess(false)
-
-    /*try {
-      const result = await emailjs.send(
-        serviceID,
-        templateID,
-        {
-          name: data.name,
-          email: data.email,
-          message: data.text,
-        },
-        publicKey
-      )
-      setSuccess(true)
-      dialogRef.current?.showModal()
-    } catch (error) {
-      setError(true)
-      dialogRef.current?.showModal()
-    }
-  } */
 
     try {
       const response = await fetch('/api/sendemail', {

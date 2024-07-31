@@ -45,6 +45,7 @@ export const projectsList = [
   {id:4,
     name: "Menu Maker by Qwenta",
     image: "/images/qwenta.webp",
+    github:"",
     context: "Qwenta souhaite faire développer un “Menu Maker” : un site permettant aux restaurateurs d’afficher et de mettre en page leurs menus facilement, en quelques clics. ",
     works: ["Rédiger les spécifications techniques à partir des besoins fonctionnels",
       "Mettre en place une méthode de veille technologique",

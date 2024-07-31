@@ -12,7 +12,7 @@ export function AboutHero() {
         alt="Morgane Couvet"
         priority
         fill={true}
-        sizes="(100vw, 100vh)"
+        sizes="30vw"
       />
     </div>
     <h1 className={merienda.className}>Qui suis-je ?</h1>

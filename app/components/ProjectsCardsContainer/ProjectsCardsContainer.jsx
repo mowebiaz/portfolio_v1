@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ProjectCard } from '../ProjectCard/ProjectCard'
-import { ModalProject } from '../ModalProject/ModalProject'
+import { ProjectModal } from '../ProjectModal/ProjectModal'
 import { projectsList } from '../../lib/projectsList'
 import './ProjectsCardsContainer.scss'
 
@@ -24,10 +24,8 @@ export function ProjectsCardsContainer() {
   useEffect(() => {
     if (selectedProject) {
       dialogRef.current?.showModal()
-    } /* else {
-      dialogRef.current?.close()
-      setSelectedProject(null)
-    } */
+      dialogRef.current.scrollTop = 0;
+    }
   }, [selectedProject])
 
   // Close the dialog when the user clicks outside of it
@@ -41,7 +39,12 @@ export function ProjectsCardsContainer() {
 
   return (
     <>
-      <motion.div className="projects_cards" variants={projectsCardsVariants} initial="initial" animate="animate">
+      <motion.div
+        className="projects_cards"
+        variants={projectsCardsVariants}
+        initial="initial"
+        animate="animate"
+      >
         {projectsList.map((project) => (
           <ProjectCard
             key={project.id}
@@ -50,11 +53,11 @@ export function ProjectsCardsContainer() {
           />
         ))}
       </motion.div>
-        <ModalProject
-          ref={dialogRef}
-          content={selectedProject}
-          onCloseModal={closeModal}
-        />
+      <ProjectModal
+        ref={dialogRef}
+        content={selectedProject}
+        onCloseModal={closeModal}
+      />
     </>
   )
 }

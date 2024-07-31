@@ -19,14 +19,14 @@ export function ProjectCard({ project, setSelectedProject }) {
             alt={project.name}
             priority
             fill={true}
-            sizes="(100vw, 100vh)"
+            sizes="(max-width: 693px) 100vw, (max-width: 1013px) 50vw, 33vw"
           />
           <div className="projectCard_icon">
             <div className="projectCard_icon_content">
               <button
                 onClick={() => setSelectedProject(project)}
-                aria-controls="dialogProject"
-                aria-label="Voir le projet"
+/*                 aria-controls="dialogProject"
+ */                aria-label="Voir le projet"
               >
                 <FaPlus />
               </button>

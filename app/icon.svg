@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1000" height="1000">
+  <rect width="1000" height="1000" rx="200" ry="200" fill="#000d2e"></rect>
+  <g transform="matrix(11.002613120616147,0,0,11.002613120616147,99.99649414026823,99.99699018050018)">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="72.71" height="72.71">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -36.3553 72.71 72.71">
+    <path d="M 0 0 L 14.1421 -14.1421 L 14.1421 14.1421 L 0 0 M 17.6777 17.6777 L 17.6777 -17.6777 L 35.3553 0 L 53.033 -17.6777 L 53.033 17.6777 L 35.3553 35.3553 L 17.6777 17.6777 M 56.5685 -14.1421 L 70.7107 0 L 56.5685 14.1421 L 56.5685 -14.1421 M 21.2132 -21.2132 L 35.3553 -35.3553 L 49.4975 -21.2132 L 35.3553 -7.0711 L 21.2132 -21.2132" stroke="#00ECAE" stroke-width="1" fill="#00ECAE">
+      </path>
+  </svg>
+  </svg>
+  </g>
+</svg>

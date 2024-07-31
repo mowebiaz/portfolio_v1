@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { merienda } from '../../styles/fonts'
 import { FaLink } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa6'
-import './ModalProject.scss'
+import './ProjectModal.scss'
 
-export const ModalProject = forwardRef(function ModalProject(
+export const ProjectModal = forwardRef(function ProjectModal(
   { content, onCloseModal },
   ref
 ) {
@@ -14,8 +14,8 @@ export const ModalProject = forwardRef(function ModalProject(
     <dialog
       className="dialogProject"
       ref={ref}
-      od="dialogProject"
-    >
+/*       id="dialogProject"
+ */    >
       {content && (
         <div className="dialogProject_content">
           <div className="title">
@@ -23,8 +23,9 @@ export const ModalProject = forwardRef(function ModalProject(
               <Image
                 src={content.image}
                 alt={content.name}
-                width={600}
-                height={400}
+                priority
+                fill={true}
+                sizes='30vw'
               />
             </div>
             <h2 className={merienda.className}>{content?.name}</h2>
@@ -56,7 +57,7 @@ export const ModalProject = forwardRef(function ModalProject(
             </div>
           </div>
           <div className="context">
-            <h3>Context: </h3>
+            <h3>Contexte: </h3>
             <p>{content.context}</p>
           </div>
           <div className="works">
@@ -73,7 +74,7 @@ export const ModalProject = forwardRef(function ModalProject(
             onClick={onCloseModal}
             aria-label="Fermer la fenêtre"
           >
-            Close
+            Fermer
           </button>
         </div>
       )}
