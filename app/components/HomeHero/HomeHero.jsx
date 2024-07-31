@@ -35,15 +35,18 @@ export const HomeHero = () => {
             initial="initial"
             animate="animate"
           >
-            {'Développeur Web'.split('').map((char, index) => (
-              <motion.span
-                key={index}
-                className="letter"
-                variants={titleVariants}
-              >
-                {char}
-              </motion.span>
-            ))}
+            <span className="sr-only">Développeur Web</span>
+            <span aria-hidden="true">
+              {'Développeur Web'.split('').map((char, index) => (
+                <motion.span
+                  key={index}
+                  className="letter"
+                  variants={titleVariants}
+                >
+                  {char}
+                </motion.span>
+              ))}
+            </span>
           </motion.h2>
         </div>
         <motion.div
@@ -68,7 +71,7 @@ export const HomeHero = () => {
       </div>
       <div className="image">
         <Image
-          src="/images/home_image.webp"
+          src="/images/morgane-web.webp"
           alt="Morgane Couvet"
           priority
           fill={true}

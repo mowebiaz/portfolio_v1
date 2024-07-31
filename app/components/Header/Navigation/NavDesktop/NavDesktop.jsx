@@ -8,7 +8,7 @@ export function NavDesktop() {
   return (
     <div className="desktop">
       <Logo />
-      <nav className="desktop_nav">
+      <nav className="desktop_nav" aria-label='Menu'>
         <ul className="desktop_nav_list">
           {desktopLinkList.map(({ title, label }) => (
             <li key={title}>
