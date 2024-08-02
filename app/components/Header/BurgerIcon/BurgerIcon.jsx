@@ -3,8 +3,6 @@ import './BurgerIcon.scss'
 export function BurgerIcon({ isOpen }) {
   return (
     <svg
-      /*       className={clsx("burger", { "open": isOpen })}
-       */
       className={`burger ${isOpen ? 'open' : ''}`}
       width="250"
       viewBox="0 0 100 100"

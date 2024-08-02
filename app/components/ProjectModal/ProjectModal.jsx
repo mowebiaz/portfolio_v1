@@ -1,4 +1,3 @@
-
 import { forwardRef } from 'react'
 import Image from 'next/image'
 import { merienda } from '../../styles/fonts'
@@ -14,8 +13,7 @@ export const ProjectModal = forwardRef(function ProjectModal(
     <dialog
       className="dialogProject"
       ref={ref}
-/*       id="dialogProject"
- */    >
+    >
       {content && (
         <div className="dialogProject_content">
           <div className="title">
@@ -25,7 +23,7 @@ export const ProjectModal = forwardRef(function ProjectModal(
                 alt={content.name}
                 priority
                 fill={true}
-                sizes='30vw'
+                sizes="30vw"
               />
             </div>
             <h2 className={merienda.className}>{content?.name}</h2>

@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { SkillsSection } from '../SkillsSection/SkillsSection'
 import { skillsList } from '../../lib/skillsList'
 import './SkillsContainer.scss'

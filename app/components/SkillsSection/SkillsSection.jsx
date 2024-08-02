@@ -4,7 +4,6 @@ import { SkillsGrid } from '../SkillsGrid/SkillsGrid'
 import { merienda } from '../../styles/fonts'
 import './SkillsSection.scss'
 
-
 export function SkillsSection({ title, skills }) {
   return (
     <section className="skills">

@@ -3,7 +3,7 @@ import { SkillsContainer } from '../../components/SkillsContainer/SkillsContaine
 import './page.scss'
 
 export const metadata = {
-  title: 'A propos',
+  title: 'Compétences',
   description:
     'Découvrez mes compétences. Expertise en HTML, CSS, JavaScript, frameworks modernes, et bien plus pour créer des sites web performants et innovants.',
 }

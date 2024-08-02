@@ -30,7 +30,7 @@ export const projectsList = [
       "Optimiser l’accessibilité", 
       "Mettre en place le référencement local", 
       "Ajouter les meta pour les réseaux sociaux"],
-    technologies: ["Lighthouse", ]
+    technologies: ["Lighthouse", "SEO"]
   },
   { id: 3,
     name: "Kasa",

@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { delay, easeIn, motion } from 'framer-motion'
+import { easeIn, motion } from 'framer-motion'
 import { merienda } from '../../styles/fonts'
 import './HomeHero.scss'
 
