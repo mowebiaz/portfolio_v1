@@ -3,6 +3,7 @@
 .about_content {
     p {
         margin-top: 1rem;
+        line-height: 1.75;
     }
     a {
         text-decoration: underline $secondary-color;
@@ -12,5 +13,10 @@
             border: 2px dotted $secondary-color;
             text-decoration: none;
         }
+    }
+}
+@media screen and (min-width: $medium) {
+    p {
+        text-align: justify;
     }
 }
