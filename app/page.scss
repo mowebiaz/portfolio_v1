@@ -4,8 +4,22 @@
 
 #home {
     @include main;  
+    max-width: 920px;
     .content {
-        margin: 2rem auto;
+        /*margin: 2rem auto;*/
+        padding: 2rem 1rem;
+        p {
+            line-height: 1.75;
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    #home .content {
+        padding: 2rem 0;
+        p {
+            text-align: justify;
+        }
     }
 }
 

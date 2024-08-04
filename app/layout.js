@@ -11,8 +11,9 @@ export const metadata = {
   description:
     'Morgane Couvet - développeur web freelance à Grenoble. Spécialisée en création de sites web modernes et performants, je transforme vos idées en réalité numérique.',
   openGraph: {
+    type: 'website',
     site_name: 'MorganeWeb',
-    url: 'https://morgane-couvet.vercel.app/',
+    url: 'https://www.morganeweb.dev/',
   }
 }
 
@@ -22,7 +23,7 @@ const jsonLd = {
   name: 'Morgane Web',
   description:
     'Morgane Couvet - développeur web freelance à Grenoble. Spécialisée en création de sites web modernes et performants, je transforme vos idées en réalité numérique.',
-  url: 'https://morgane-couvet.vercel.app/',
+  url: 'https://www.morganeweb.dev/',
   sameAs: [
     'https://github.com/mowebiaz',
     'https://www.linkedin.com/in/morgane-couvet/',
@@ -34,12 +35,14 @@ const jsonLd = {
     addressLocality: 'Grenoble',
     addressCountry: 'France',
   },
+  telephone: "04 56 24 62 84",
   image:
-    'https://morgane-couvet.vercel.app/images/morgane-web.webp',
+    'https://www.morganeweb.dev/images/morgane-web.webp',
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'développement web',
   },
+  priceRange: '€'
 }
 
 export default function RootLayout({ children }) {

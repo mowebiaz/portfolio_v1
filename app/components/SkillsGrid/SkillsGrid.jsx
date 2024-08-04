@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { skillsContainerVariants } from '../SkillsContainer/SkillsContainer'
 import { SkillCard } from '../SkillCard/SkillCard'
 import "./SkillsGrid.scss"
 

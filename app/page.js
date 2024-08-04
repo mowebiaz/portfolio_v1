@@ -9,7 +9,7 @@ export default function Home() {
         <section className="content">
           <p>Bienvenue sur mon site.</p>
           <p>
-            Développeur web freelance, passionné par la création de sites et
+            Développeur web freelance, passionnée par la création de sites et
             d&apos;applications web performants et intuitifs, je mets mon expertise
             au service de vos projets pour les mener au succès. Explorez mon
             portfolio pour découvrir mes réalisations et n&apos;hésitez pas à me

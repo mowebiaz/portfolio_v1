@@ -1,9 +1,9 @@
 @use '/app/styles/sass/mixins' as *;
 
 #skillsPage {
-  padding: 2.5rem 0;
-  flex: 1 0 auto; /* for sticky footer */
-  h1 {
-    text-align: center;
-  }
+    padding: 2.5rem 0;
+    flex: 1 0 auto; /* for sticky footer */
+    h1 {
+        text-align: center;
+    }
 }

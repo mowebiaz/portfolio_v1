@@ -25,8 +25,7 @@ export function ProjectCard({ project, setSelectedProject }) {
             <div className="projectCard_icon_content">
               <button
                 onClick={() => setSelectedProject(project)}
-/*                 aria-controls="dialogProject"
- */                aria-label="Voir le projet"
+                aria-label="Voir le projet"
               >
                 <FaPlus />
               </button>

@@ -2,14 +2,12 @@
 @use 'sass:color';
 
 .skills {
-  padding:0.5rem 2rem 2rem 2rem;
-  border-radius: 1.25rem;
-  h2 {
-    margin-bottom: 1rem;
-  }
+    padding: 0.5rem 2rem 2rem 2rem;
+    border-radius: 1.25rem;
+    h2 {
+        margin-bottom: 1rem;
+    }
 
-/*   box-shadow: 2px 5px 10px color.scale($font-color, $alpha: -20%);
- */
- border: 1px solid $font-color; /* Bordure avec la couleur primaire */
- box-shadow: 0 4px 8px hsla(164, 100%, 97%, 0.3); /* Ombre douce claire */
+    border: 1px solid $font-color;
+    box-shadow: 0 4px 8px hsla(164, 100%, 97%, 0.3);
 }

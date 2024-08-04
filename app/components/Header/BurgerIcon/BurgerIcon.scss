@@ -10,8 +10,7 @@
     fill: $font-color;
     transition: background-color 150ms ease-in;
     rect {
-        transition: y 75ms ease-in 75ms, rotate 75ms ease-in,
-            opacity 0ms 75ms;
+        transition: y 75ms ease-in 75ms, rotate 75ms ease-in, opacity 0ms 75ms;
         transform-origin: center;
     }
 }
@@ -19,8 +18,7 @@
 .burger.open {
     fill: $background-color;
     rect {
-        transition: y 75ms ease-in, rotate 75ms ease-in 75ms,
-            opacity 0ms 75ms;
+        transition: y 75ms ease-in, rotate 75ms ease-in 75ms, opacity 0ms 75ms;
     }
     .rectTop,
     .rectBottom {
@@ -39,4 +37,3 @@
         opacity: 0;
     }
 }
-
