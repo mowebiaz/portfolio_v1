@@ -9,10 +9,10 @@
         text-decoration: underline $secondary-color;
         border: 2px solid transparent;
 
-        @media(hover: hover) and (pointer: fine){
-            border: 2px dotted $secondary-color;
-            text-decoration: none;
-        }
+            &:hover{
+                border: 2px dotted $secondary-color;
+                text-decoration: none;
+            }
     }
 }
 @media screen and (min-width: $medium) {

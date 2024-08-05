@@ -12,9 +12,9 @@ export const metadata = {
     'Morgane Couvet - développeur web freelance à Grenoble. Spécialisée en création de sites web modernes et performants, je transforme vos idées en réalité numérique.',
   openGraph: {
     type: 'website',
-    site_name: 'MorganeWeb',
+    siteName: 'MorganeWeb',
     url: 'https://www.morganeweb.dev/',
-  }
+  },
 }
 
 const jsonLd = {
@@ -33,26 +33,25 @@ const jsonLd = {
     streetAddress: '11 Boulevard Maréchal Leclerc',
     postalCode: '38000',
     addressLocality: 'Grenoble',
-    addressCountry: 'France',
+    addressCountry: 'FR',
   },
-  telephone: "04 56 24 62 84",
-  image:
-    'https://www.morganeweb.dev/images/morgane-web.webp',
+  telephone: '04 56 24 62 84',
+  image: 'https://www.morganeweb.dev/images/morgane-web.webp',
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'développement web',
   },
-  priceRange: '€'
+  priceRange: '€',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className={roboto.className}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Header />
         {children}
         <Footer />

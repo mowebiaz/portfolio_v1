@@ -16,6 +16,7 @@ footer {
     }
 
 }
+
 .footer_links {
     display: flex;
     align-items: center;
@@ -25,15 +26,23 @@ footer {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        @media(hover: hover) and (pointer: fine) {
-            svg {
-                fill: $secondary-color;
-            }
-        }
         svg {
             fill: $background-color;
             width: 30px;
             height: 30px;
+            transition: fill 250ms ease-in-out;
         }
+
+        @media(hover: hover) {
+            &:hover svg {
+                fill: $secondary-color;
+            }
+        }
+        @media(hover:none) {
+            &:active svg {
+                fill: $secondary-color;
+            }
+        }
+
     }
 }
